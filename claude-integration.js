@@ -8,6 +8,7 @@ const CLAUDE_CONFIG = {
     // model: "claude-3-5-sonnet-20241022",  // Default model, can be changed
     model: "claude-3-opus-20240229",  // Model that's confirmed working with API key
     // model: "claude-3-haiku-20240307",
+    fallbackModel: "claude-3-haiku-20240307",  // Faster model for timeout retry
     defaultSystemPrompt: `You are an AI assistant specialized in analyzing acupuncture research queries. 
     Extract search parameters from natural language queries about acupuncture research.
     Return a JSON with these fields if found in the query:
@@ -297,12 +298,61 @@ Use proper markdown formatting for all sections. Each bullet point should be tho
     } catch (error) {
         console.error("Error calling Claude API for summarization:", error);
         
+        // Check if this is a timeout error and we haven't tried the faster model yet
+        const isTimeoutError = error.message.includes('timeout') || error.message.includes('Timeout') || 
+                              error.message.includes('408') || error.message.includes('timed out');
+        
+        if (isTimeoutError && requestData.model !== CLAUDE_CONFIG.fallbackModel) {
+            console.log("Timeout detected, retrying with faster model:", CLAUDE_CONFIG.fallbackModel);
+            
+            try {
+                // Retry with faster model
+                const retryRequestData = {
+                    ...requestData,
+                    model: CLAUDE_CONFIG.fallbackModel,
+                    max_tokens: Math.min(requestData.max_tokens, 800) // Also reduce tokens for speed
+                };
+                
+                let retryData;
+                if (useProxy) {
+                    retryData = await callClaudeApiWithProxy(retryRequestData, CLAUDE_API_KEY);
+                } else {
+                    const retryResponse = await fetch(CLAUDE_CONFIG.apiEndpoint, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'x-api-key': CLAUDE_API_KEY,
+                            'anthropic-version': CLAUDE_CONFIG.apiVersion
+                        },
+                        mode: 'cors',
+                        body: JSON.stringify(retryRequestData)
+                    });
+                    
+                    if (!retryResponse.ok) {
+                        throw new Error(`Retry failed: ${retryResponse.status}`);
+                    }
+                    
+                    retryData = await retryResponse.json();
+                }
+                
+                const retryContent = retryData.content && retryData.content[0] && retryData.content[0].text;
+                if (retryContent) {
+                    console.log("Retry with faster model succeeded");
+                    return `${retryContent}\n\n*Note: Generated using faster model (${CLAUDE_CONFIG.fallbackModel}) due to timeout with primary model.*`;
+                }
+            } catch (retryError) {
+                console.error("Retry with faster model also failed:", retryError);
+            }
+        }
+        
         // Add suggestion to try proxy if it was a network error
         const useProxy = isClaudeApiProxyEnabled && isClaudeApiProxyEnabled();
         let errorMessage = error.message;
         
         if (!useProxy && (error.message.includes("Failed to fetch") || error.message.includes("NetworkError"))) {
             errorMessage += ". Try enabling the proxy server option.";
+        } else if (isTimeoutError) {
+            errorMessage += ". The request was too complex. Consider simplifying your query or try again.";
         }
         
         return `Error generating summary: ${errorMessage}`;

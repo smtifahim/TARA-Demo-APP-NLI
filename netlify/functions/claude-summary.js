@@ -1,6 +1,6 @@
-// Netlify Function to proxy Claude API requests and handle CORS
+// Optimized Netlify Function specifically for Claude summarization with faster processing
 exports.handler = async (event, context) => {
-  // Set a shorter timeout for the function to prevent hanging
+  // Optimize for faster execution
   context.callbackWaitsForEmptyEventLoop = false;
   
   // Handle preflight OPTIONS requests
@@ -16,23 +16,7 @@ exports.handler = async (event, context) => {
     };
   }
 
-  // Handle GET requests for health check
-  if (event.httpMethod === 'GET') {
-    return {
-      statusCode: 200,
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ 
-        status: 'ok', 
-        message: 'Claude proxy function is running',
-        timestamp: new Date().toISOString()
-      })
-    };
-  }
-
-  // Only allow POST requests for actual proxying
+  // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
@@ -58,8 +42,8 @@ exports.handler = async (event, context) => {
       };
     }
 
-    // Extract API key and API version from the request
-    const { apiKey, apiVersion, ...claudeRequestData } = requestData;
+    // Extract API key from the request
+    const { apiKey, ...claudeRequestData } = requestData;
     
     if (!apiKey) {
       return {
@@ -71,54 +55,21 @@ exports.handler = async (event, context) => {
       };
     }
 
-    // Basic API key format validation for Claude
-    if (!apiKey.startsWith('sk-ant-')) {
-      return {
-        statusCode: 400,
-        headers: {
-          'Access-Control-Allow-Origin': '*'
-        },
-        body: JSON.stringify({ error: 'Invalid API key format. Claude API keys should start with "sk-ant-"' })
-      };
-    }
+    // Force use of faster model for summaries
+    claudeRequestData.model = "claude-3-haiku-20240307";
+    
+    // Limit max tokens for faster response
+    claudeRequestData.max_tokens = Math.min(claudeRequestData.max_tokens || 800, 800);
 
-    // Validate that we have the required Claude API request structure
-    if (!claudeRequestData.model || !claudeRequestData.messages) {
-      return {
-        statusCode: 400,
-        headers: {
-          'Access-Control-Allow-Origin': '*'
-        },
-        body: JSON.stringify({ 
-          error: 'Invalid request: model and messages are required',
-          received: Object.keys(claudeRequestData)
-        })
-      };
-    }
-
-    console.log('Proxying request to Claude API:', {
+    console.log('Fast summary request to Claude API:', {
       model: claudeRequestData.model,
       messageCount: claudeRequestData.messages?.length,
-      hasSystem: !!claudeRequestData.system,
-      apiVersion: apiVersion || '2023-06-01',
-      hasApiKey: !!apiKey,
-      requestSize: JSON.stringify(claudeRequestData).length
+      maxTokens: claudeRequestData.max_tokens
     });
 
-    // Estimate request complexity and suggest optimizations for large requests
-    const requestSize = JSON.stringify(claudeRequestData).length;
-    const maxTokens = claudeRequestData.max_tokens || 1000;
-    const isComplexRequest = requestSize > 5000 || maxTokens > 800;
-    
-    if (isComplexRequest) {
-      console.log('Large/complex request detected:', { requestSize, maxTokens });
-      // Log suggestion for optimization
-      console.log('Consider using claude-3-haiku-20240307 for faster responses on complex requests');
-    }
-
-    // Create a timeout promise to prevent hanging (generous timeout for complex requests)
+    // Shorter timeout for faster model
     const timeoutPromise = new Promise((_, reject) => {
-      setTimeout(() => reject(new Error('Request timeout after 20 seconds')), 20000);
+      setTimeout(() => reject(new Error('Summary timeout after 15 seconds')), 15000);
     });
 
     // Make the request to Claude API with timeout
@@ -127,7 +78,7 @@ exports.handler = async (event, context) => {
       headers: {
         'Content-Type': 'application/json',
         'x-api-key': apiKey,
-        'anthropic-version': apiVersion || '2023-06-01'
+        'anthropic-version': '2023-06-01'
       },
       body: JSON.stringify(claudeRequestData)
     });
@@ -139,10 +90,10 @@ exports.handler = async (event, context) => {
     const responseData = await response.json();
 
     // Log response status for debugging
-    console.log('Claude API response status:', response.status);
+    console.log('Claude API summary response status:', response.status);
     
     if (!response.ok) {
-      console.error('Claude API error:', responseData);
+      console.error('Claude API summary error:', responseData);
     }
 
     // Return the response with CORS headers
@@ -158,7 +109,7 @@ exports.handler = async (event, context) => {
     };
 
   } catch (error) {
-    console.error('Proxy function error:', error);
+    console.error('Summary function error:', error);
     
     // Handle timeout errors specifically
     if (error.message.includes('timeout')) {
@@ -169,9 +120,9 @@ exports.handler = async (event, context) => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({ 
-          error: 'Request timeout',
-          message: 'The Claude API request took too long to complete. Try reducing the complexity of your request or use a faster model.',
-          details: 'Netlify function timeout after 20 seconds'
+          error: 'Summary timeout',
+          message: 'The summary request took too long. Try with fewer results or a simpler query.',
+          details: 'Fast summary function timeout after 15 seconds'
         })
       };
     }

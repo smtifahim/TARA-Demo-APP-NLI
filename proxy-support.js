@@ -4,8 +4,23 @@
 // Proxy configuration
 const PROXY_CONFIG = {
     enabled: false, // Default to disabled
-    endpoint: "/.netlify/functions/claude-proxy" // Use Netlify function endpoint
+    endpoint: getProxyEndpoint() // Automatically detect correct endpoint
 };
+
+// Function to determine the correct proxy endpoint based on environment
+function getProxyEndpoint() {
+    const isLocalhost = window.location.hostname === 'localhost' || 
+                       window.location.hostname === '127.0.0.1' || 
+                       window.location.hostname === '';
+    
+    if (isLocalhost) {
+        // Local development - use local proxy server
+        return "http://localhost:3000/proxy/claude";
+    } else {
+        // Production/Netlify - use Netlify function
+        return "/.netlify/functions/claude-proxy";
+    }
+}
 
 // Function to toggle proxy usage
 function toggleClaudeApiProxy(enable) {
@@ -24,6 +39,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedSetting = localStorage.getItem("claude_use_proxy");
     if (savedSetting === "true") {
         PROXY_CONFIG.enabled = true;
+    }
+    
+    // If running locally, check if local proxy is available and suggest enabling it
+    const isLocalhost = window.location.hostname === 'localhost' || 
+                       window.location.hostname === '127.0.0.1' || 
+                       window.location.hostname === '';
+    
+    if (isLocalhost && !PROXY_CONFIG.enabled) {
+        console.log("🚀 Running locally detected!");
+        console.log("💡 To use Claude API locally, you need to:");
+        console.log("   1. Run 'node claude-proxy.js' in terminal");
+        console.log("   2. Click 'Use Proxy: Off' to enable proxy");
+        console.log("   3. Then set your Claude API key");
     }
 });
 
@@ -59,8 +87,14 @@ async function callClaudeApiWithProxy(requestData, apiKey) {
             let errorText = `${response.status} ${response.statusText}`;
             try {
                 const errorData = await response.json();
+                if (response.status === 408 || errorData.error === 'Request timeout') {
+                    throw new Error(`Timeout: ${errorData.message || 'Request took too long to complete'}`);
+                }
                 errorText += ` - ${errorData.error || JSON.stringify(errorData)}`;
             } catch (parseError) {
+                if (parseError.message.includes('Timeout')) {
+                    throw parseError; // Re-throw timeout errors
+                }
                 const textResponse = await response.text();
                 errorText += ` - ${textResponse}`;
             }
@@ -91,22 +125,47 @@ async function validateClaudeApiKeyWithProxy(apiKey) {
         
         console.log("Validating Claude API key using proxy...");
         
-        // For Netlify deployment, we can optionally test the function endpoint
-        try {
-            // Test if the Netlify function is accessible
-            const testResponse = await fetch(PROXY_CONFIG.endpoint, {
-                method: 'GET'
-            });
-            
-            if (testResponse.ok) {
-                const healthData = await testResponse.json();
-                console.log("Proxy function health check:", healthData.message);
-            } else {
-                console.warn("Health check failed:", testResponse.status, testResponse.statusText);
+        // For local development, test the proxy server specifically
+        const isLocalhost = window.location.hostname === 'localhost' || 
+                           window.location.hostname === '127.0.0.1' || 
+                           window.location.hostname === '';
+        
+        if (isLocalhost) {
+            try {
+                // Test if local proxy server is running
+                const localProxyTest = await fetch('http://localhost:3000/ping', {
+                    method: 'GET'
+                });
+                
+                if (localProxyTest.ok) {
+                    const healthData = await localProxyTest.json();
+                    console.log("Local proxy server health check:", healthData.message);
+                } else {
+                    console.warn("Local proxy server not responding. Make sure to run 'node claude-proxy.js'");
+                }
+            } catch (localProxyError) {
+                console.warn("Local proxy server not running. Run 'node claude-proxy.js' to start it.");
+                return {
+                    valid: false,
+                    message: "Local proxy server not running",
+                    details: "Run 'node claude-proxy.js' in your terminal to start the local proxy server, then try again."
+                };
             }
-        } catch (connError) {
-            console.warn("Proxy function health check failed (this may be normal):", connError.message);
-            // Continue anyway - the health check failure doesn't necessarily mean the proxy won't work
+        } else {
+            // For Netlify deployment, test the function endpoint
+            try {
+                const testResponse = await fetch(PROXY_CONFIG.endpoint, {
+                    method: 'GET'
+                });
+                
+                if (testResponse.ok) {
+                    const healthData = await testResponse.json();
+                    console.log("Proxy function health check:", healthData.message);
+                }
+            } catch (connError) {
+                console.warn("Proxy function health check failed (this may be normal):", connError.message);
+                // Continue anyway - the health check failure doesn't necessarily mean the proxy won't work
+            }
         }
         
         // Validate that we have an API key
@@ -137,7 +196,17 @@ async function validateClaudeApiKeyWithProxy(apiKey) {
         
         let errorDetails = "";
         if (error.message.includes("Failed to fetch") || error.message.includes("NetworkError")) {
-            errorDetails = "Network error when connecting to the proxy function. This could be due to connectivity issues or if the Netlify function is not deployed properly.";
+            const isLocalhost = window.location.hostname === 'localhost' || 
+                               window.location.hostname === '127.0.0.1' || 
+                               window.location.hostname === '';
+            
+            if (isLocalhost) {
+                errorDetails = "Local development detected. Make sure to run 'node claude-proxy.js' in terminal and enable the proxy in the UI.";
+            } else {
+                errorDetails = "Network error when connecting to the proxy function. This could be due to connectivity issues or if the Netlify function is not deployed properly.";
+            }
+        } else if (error.message.includes("Timeout")) {
+            errorDetails = "The request timed out. The system will automatically retry with a faster model for complex summarization requests.";
         }
         
         return {

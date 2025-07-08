@@ -1,6 +1,14 @@
 [build]
   functions = "netlify/functions"
 
+[functions]
+  # Increase timeout for claude-proxy function
+  timeout = 26
+
+[functions."claude-proxy"]
+  # Specific timeout for claude-proxy function (max 26 seconds for Pro plans, 10 for free)
+  timeout = 26
+
 [[headers]]
   for = "/.netlify/functions/*"
   [headers.values]
