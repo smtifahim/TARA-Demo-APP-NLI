@@ -55,8 +55,8 @@ exports.handler = async (event, context) => {
       };
     }
 
-    // Extract API key from the request
-    const { apiKey, ...claudeRequestData } = requestData;
+    // Extract API key and API version from the request
+    const { apiKey, apiVersion, ...claudeRequestData } = requestData;
     
     if (!apiKey) {
       return {
@@ -65,6 +65,17 @@ exports.handler = async (event, context) => {
           'Access-Control-Allow-Origin': '*'
         },
         body: JSON.stringify({ error: 'API key is required' })
+      };
+    }
+
+    // Basic API key format validation for Claude
+    if (!apiKey.startsWith('sk-ant-')) {
+      return {
+        statusCode: 400,
+        headers: {
+          'Access-Control-Allow-Origin': '*'
+        },
+        body: JSON.stringify({ error: 'Invalid API key format. Claude API keys should start with "sk-ant-"' })
       };
     }
 
@@ -85,7 +96,9 @@ exports.handler = async (event, context) => {
     console.log('Proxying request to Claude API:', {
       model: claudeRequestData.model,
       messageCount: claudeRequestData.messages?.length,
-      hasSystem: !!claudeRequestData.system
+      hasSystem: !!claudeRequestData.system,
+      apiVersion: apiVersion || '2023-06-01',
+      hasApiKey: !!apiKey
     });
 
     // Make the request to Claude API
@@ -94,7 +107,7 @@ exports.handler = async (event, context) => {
       headers: {
         'Content-Type': 'application/json',
         'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01'
+        'anthropic-version': apiVersion || '2023-06-01'
       },
       body: JSON.stringify(claudeRequestData)
     });

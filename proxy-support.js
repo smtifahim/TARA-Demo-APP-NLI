@@ -36,8 +36,15 @@ async function callClaudeApiWithProxy(requestData, apiKey) {
         const proxyRequestData = {
             ...requestData,
             apiKey: apiKey,
-            apiVersion: CLAUDE_CONFIG.apiVersion
+            apiVersion: (typeof CLAUDE_CONFIG !== 'undefined' && CLAUDE_CONFIG.apiVersion) || "2023-06-01"
         };
+        
+        console.log("Proxy request data:", {
+            model: proxyRequestData.model,
+            hasApiKey: !!proxyRequestData.apiKey,
+            apiVersion: proxyRequestData.apiVersion,
+            messageCount: proxyRequestData.messages?.length
+        });
         
         const response = await fetch(PROXY_CONFIG.endpoint, {
             method: 'POST',
@@ -48,7 +55,16 @@ async function callClaudeApiWithProxy(requestData, apiKey) {
         });
         
         if (!response.ok) {
-            throw new Error(`Proxy server error: ${response.status} ${response.statusText}`);
+            // Get more detailed error information
+            let errorText = `${response.status} ${response.statusText}`;
+            try {
+                const errorData = await response.json();
+                errorText += ` - ${errorData.error || JSON.stringify(errorData)}`;
+            } catch (parseError) {
+                const textResponse = await response.text();
+                errorText += ` - ${textResponse}`;
+            }
+            throw new Error(`Proxy server error: ${errorText}`);
         }
         
         return await response.json();
@@ -64,7 +80,7 @@ async function validateClaudeApiKeyWithProxy(apiKey) {
         const testPrompt = "Say hello.";
         
         // If no API key provided, use the stored one
-        const keyToTest = apiKey || CLAUDE_API_KEY;
+        const keyToTest = apiKey || (typeof CLAUDE_API_KEY !== 'undefined' ? CLAUDE_API_KEY : null);
         
         if (!keyToTest) {
             return {
@@ -85,14 +101,24 @@ async function validateClaudeApiKeyWithProxy(apiKey) {
             if (testResponse.ok) {
                 const healthData = await testResponse.json();
                 console.log("Proxy function health check:", healthData.message);
+            } else {
+                console.warn("Health check failed:", testResponse.status, testResponse.statusText);
             }
         } catch (connError) {
             console.warn("Proxy function health check failed (this may be normal):", connError.message);
             // Continue anyway - the health check failure doesn't necessarily mean the proxy won't work
         }
         
+        // Validate that we have an API key
+        if (!keyToTest) {
+            return {
+                valid: false,
+                message: "No API key provided for validation"
+            };
+        }
+        
         const proxyResponse = await callClaudeApiWithProxy({
-            model: CLAUDE_CONFIG.model,
+            model: (typeof CLAUDE_CONFIG !== 'undefined' && CLAUDE_CONFIG.model) || "claude-3-opus-20240229",
             max_tokens: 10,
             messages: [
                 {
