@@ -13,9 +13,16 @@ function getProxyEndpoint() {
                        window.location.hostname === '127.0.0.1' || 
                        window.location.hostname === '';
     
+    const isFirebase = window.location.hostname.includes('.web.app') ||
+                      window.location.hostname.includes('.firebaseapp.com');
+    
     if (isLocalhost) {
         // Local development - use local proxy server
         return "http://localhost:3000/proxy/claude";
+    } else if (isFirebase) {
+        // Firebase Hosting - use Firebase Function proxy (when available)
+        // For now, this will be null until Firebase Functions are deployed
+        return "/api/claude-proxy";
     } else {
         // Production/Netlify - use Netlify function
         return "/.netlify/functions/claude-proxy";
@@ -31,6 +38,14 @@ function toggleClaudeApiProxy(enable) {
 
 // Function to check if proxy is enabled
 function isClaudeApiProxyEnabled() {
+    const isFirebase = window.location.hostname.includes('.web.app') ||
+                      window.location.hostname.includes('.firebaseapp.com');
+    
+    // On Firebase, we need to use the proxy (Firebase Function) for Claude API
+    if (isFirebase) {
+        return true; // Always use proxy on Firebase
+    }
+    
     return PROXY_CONFIG.enabled;
 }
 
@@ -41,10 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
         PROXY_CONFIG.enabled = true;
     }
     
-    // If running locally, check if local proxy is available and suggest enabling it
+    // Check environment and provide appropriate guidance
     const isLocalhost = window.location.hostname === 'localhost' || 
                        window.location.hostname === '127.0.0.1' || 
                        window.location.hostname === '';
+    
+    const isFirebase = window.location.hostname.includes('.web.app') ||
+                      window.location.hostname.includes('.firebaseapp.com');
     
     if (isLocalhost && !PROXY_CONFIG.enabled) {
         console.log("🚀 Running locally detected!");
@@ -52,13 +70,29 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("   1. Run 'node claude-proxy.js' in terminal");
         console.log("   2. Click 'Use Proxy: Off' to enable proxy");
         console.log("   3. Then set your Claude API key");
+    } else if (isFirebase) {
+        console.log("🔥 Firebase Hosting detected!");
+        console.log("⚠️  Claude API requires Firebase Functions (server-side proxy)");
+        console.log("💡 To enable Claude API on Firebase:");
+        console.log("   1. Upgrade to Firebase Blaze plan (pay-as-you-go)");
+        console.log("   2. Deploy Firebase Functions with 'firebase deploy --only functions'");
+        console.log("   3. Claude API will then work through the server proxy");
+        console.log("✅ Gemini API works directly (no proxy needed)");
+        PROXY_CONFIG.enabled = true; // Enable proxy attempt on Firebase
     }
 });
 
 // Function to call Claude API through proxy
 async function callClaudeApiWithProxy(requestData, apiKey) {
     try {
-        console.log("Using proxy server for Claude API request:", PROXY_CONFIG.endpoint);
+        const isFirebase = window.location.hostname.includes('.web.app') ||
+                          window.location.hostname.includes('.firebaseapp.com');
+        
+        if (isFirebase) {
+            console.log("Using Firebase Function proxy for Claude API request:", PROXY_CONFIG.endpoint);
+        } else {
+            console.log("Using proxy server for Claude API request:", PROXY_CONFIG.endpoint);
+        }
         
         // Include API key and API version in the request body for the proxy
         const proxyRequestData = {
@@ -83,6 +117,11 @@ async function callClaudeApiWithProxy(requestData, apiKey) {
         });
         
         if (!response.ok) {
+            // Handle specific Firebase Function errors
+            if (isFirebase && (response.status === 404 || response.status === 502)) {
+                throw new Error("Firebase Functions not deployed. Please upgrade to Firebase Blaze plan and deploy functions with 'firebase deploy --only functions'");
+            }
+            
             // Get more detailed error information
             let errorText = `${response.status} ${response.statusText}`;
             try {
@@ -111,6 +150,34 @@ async function callClaudeApiWithProxy(requestData, apiKey) {
 // Function to validate API key using proxy
 async function validateClaudeApiKeyWithProxy(apiKey) {
     try {
+        // Check if we're on Firebase - if so, proxy is not available
+        const isFirebase = window.location.hostname.includes('.web.app') ||
+                          window.location.hostname.includes('.firebaseapp.com');
+        
+        if (isFirebase) {
+            console.log("Firebase hosting detected - checking Firebase Function proxy availability...");
+            try {
+                // Test if Firebase Function is available with a simple request
+                const testResponse = await fetch(PROXY_CONFIG.endpoint, {
+                    method: 'OPTIONS'
+                });
+                
+                if (!testResponse.ok) {
+                    return {
+                        valid: false,
+                        message: "Firebase Functions not deployed",
+                        details: "Upgrade to Firebase Blaze plan and deploy functions with 'firebase deploy --only functions'"
+                    };
+                }
+            } catch (firebaseError) {
+                return {
+                    valid: false,
+                    message: "Firebase Functions not available",
+                    details: "Upgrade to Firebase Blaze plan and deploy functions to use Claude API"
+                };
+            }
+        }
+        
         const testPrompt = "Say hello.";
         
         // If no API key provided, use the stored one

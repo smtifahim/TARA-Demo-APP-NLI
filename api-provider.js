@@ -223,22 +223,38 @@ async function validateCurrentApiKey(apiKey) {
 
 // Extract filters using the current provider
 async function extractFiltersWithCurrentProvider(query) {
-    if (isClaudeProvider()) {
-        return extractFiltersWithClaude(query);
-    } else if (isGeminiProvider()) {
-        return extractFiltersWithGemini(query);
+    try {
+        if (isClaudeProvider()) {
+            return await extractFiltersWithClaude(query);
+        } else if (isGeminiProvider()) {
+            return await extractFiltersWithGemini(query);
+        }
+        throw new Error("No valid API provider selected");
+    } catch (error) {
+        // Handle specific Firebase Claude API errors
+        if (error.message.includes("Firebase Functions not deployed")) {
+            throw new Error("Claude API requires Firebase Functions. Please upgrade to Firebase Blaze plan or switch to Gemini API.");
+        }
+        throw error;
     }
-    throw new Error("No valid API provider selected");
 }
 
 // Summarize results using the current provider
 async function summarizeResultsWithCurrentProvider(query, results) {
-    if (isClaudeProvider()) {
-        return summarizeResultsWithClaude(query, results);
-    } else if (isGeminiProvider()) {
-        return summarizeResultsWithGemini(query, results);
+    try {
+        if (isClaudeProvider()) {
+            return await summarizeResultsWithClaude(query, results);
+        } else if (isGeminiProvider()) {
+            return await summarizeResultsWithGemini(query, results);
+        }
+        return "Error: No valid API provider selected";
+    } catch (error) {
+        // Handle specific Firebase Claude API errors
+        if (error.message.includes("Firebase Functions not deployed")) {
+            return "Claude API requires Firebase Functions. Please upgrade to Firebase Blaze plan or switch to Gemini API for summarization.";
+        }
+        throw error;
     }
-    return "Error: No valid API provider selected";
 }
 
 // Update the API key status display based on current provider

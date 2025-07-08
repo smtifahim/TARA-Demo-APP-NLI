@@ -277,8 +277,14 @@
                 // Add detailed error information if available
                 if (validation.details) {
                   detailsContainer.innerHTML += `<div style="margin-top:5px; color:#D8000C; background-color:#FFBABA; padding:5px; border-radius:5px;">
-                    <strong>Details:</strong> ${validation.details}
-                  </div>`;
+                    <strong>Details:</strong> ${validation.details}`;
+                  
+                  // If it's a Firebase Functions issue, suggest switching to Gemini
+                  if (validation.details.includes("Firebase Functions") || validation.details.includes("Blaze plan")) {
+                    detailsContainer.innerHTML += `<br><br><strong>💡 Suggestion:</strong> <button onclick="setApiProvider('gemini'); location.reload();" style="background:#4CAF50; color:white; border:none; padding:5px 10px; border-radius:3px; cursor:pointer;">Switch to Gemini API</button> (works immediately!)`;
+                  }
+                  
+                  detailsContainer.innerHTML += `</div>`;
                 }
                 
                 // Common issues help - different for Claude and Gemini

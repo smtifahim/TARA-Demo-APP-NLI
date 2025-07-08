@@ -954,10 +954,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 });
 
-// Export example questions for use in other modules
-window.exampleQuestions = exampleQuestions;
-
-// Example questions for each filter category
+// Example questions for each filter category - Updated for Firebase deployment
 const exampleQuestions = {
     acupoint: [
         "What research exists about the LI4 acupoint?",
@@ -1020,6 +1017,9 @@ const exampleQuestions = {
         "Research on acupoints in the trunk region for fibromyalgia from United States"
     ]
 };
+
+// Export example questions for use in other modules
+window.exampleQuestions = exampleQuestions;
 
 // Function to check for zero results and try alternative searches
 function checkForZeroResults(resultsDiv, originalFilters, query, keyTerms) {
