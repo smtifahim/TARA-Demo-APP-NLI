@@ -185,7 +185,7 @@ Please provide a well-structured summary of these research findings in a clear, 
 A brief introduction in 2-3 sentences about the research findings, including the number of studies found and their general focus.
 
 ## Most Common Acupoints
-List four most significant acupoints as a simple bullet point with a complete sentence or two:
+List the 4 most significant acupoints as a simple bullet point with a complete sentence or two:
 - LI4 (Hegu) was studied in 5 articles examining headache and pain. Include special point category (e.g., "Back-Shu Point") for each significant acupoint if applicable
 
 Don't use bold text or special formatting - just write in a natural, narrative style.
