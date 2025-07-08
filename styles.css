@@ -1,0 +1,545 @@
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container
+{
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2
+{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.input-table td
+{
+    padding: 6px;
+}
+
+.input-table input
+{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #33a5d2;
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgb(240, 245, 250);
+}
+
+.buttons
+{
+    text-align: center;
+    margin: 15px 0;
+}
+
+button
+{
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c76d5;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover
+{
+    background-color: #30991f;
+}
+
+results
+{
+    margin-top: 25px;
+}
+
+.search-summary
+{
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    font-size: 18px;
+}
+
+.article-group
+{
+    margin-bottom: 30px;
+    border: 1px solid #0b88ef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.result-table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+
+.result-table th, .result-table td
+{
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.result-table th
+{
+    background-color: #227ad2;
+    color: white;
+    font-weight: lighter;
+}
+
+.result-table tr:nth-child(even)
+{
+    background-color: #fafafa;
+}
+
+.result-table tr:hover
+{
+    background-color: #e9f2fb;
+}
+
+.result-table a
+{
+    color: #054789;
+    text-decoration: none;
+}
+
+.result-table a:hover
+{
+    text-decoration: underline;
+}
+
+.acupoint-table
+{
+    margin-top: 0;
+}
+
+td
+{
+    position: relative;
+}
+
+.even-row
+{
+    background-color: #ffffff;
+}
+
+strong
+{
+    font-weight: bold;
+}
+
+.small-space
+{
+    display: block;
+    height: 7px;
+}
+
+/* CSS for autocomplete */
+
+.autocomplete-items
+{
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 350px;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.autocomplete-items div 
+{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover
+{
+    background-color:rgb(207, 222, 248);
+}
+
+td 
+{
+    position: relative;
+}
+
+/* .even-row 
+{
+    background-color:rgb(250, 250, 250);
+} */
+
+.search-summary 
+{
+    margin-bottom: 15px;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px)
+{
+    .container
+    {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .result-table th, .result-table td
+    {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+.autocomplete-active 
+{
+    background-color: #c2daf2 !important; 
+    color: #054789 !important;
+}
+
+/* .autocomplete-active 
+{
+    background-color: #c2daf2 !important; 
+    color: #054789;
+} */
+
+/* Natural Language Search Styling */
+.nl-label
+{
+    font-weight: bold;
+    font-size: 18px;
+    color: #285987;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+.nl-input-container
+{
+    margin: 6px 0 20px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.search-row
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 5px;
+}
+
+.nl-search-input
+{
+    width: 98%;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: border-color 0.2s ease-in-out;
+}
+
+.nl-search-input:focus
+{
+    outline: none;
+    border-color: #33a5d2;
+    box-shadow: 0 0 0 3px rgba(51, 165, 210, 0.1);
+}
+
+.nl-examples
+{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+.nl-example
+{
+    color: #0645AD;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.nl-example
+{
+    color: #0645AD;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nl-example:hover
+{
+    text-decoration: underline;
+}
+
+#nl-autocomplete-list
+{
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    z-index: 99;
+    top: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    background-color: white;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 0 0 4px 4px;
+}
+
+.suggestion-type
+{
+    color: #888;
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.nl-summary
+{
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-left: 5px solid #4CAF50;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+
+.nl-summary h3
+{
+    color: #285987;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.summary-content
+{
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.summary-content h2
+{
+    color: #285987;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #cde;
+    padding-bottom: 6px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.summary-content h3
+{
+    color: #33a5d2;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.summary-content ul, .summary-content ol
+{
+    margin-left: 20px;
+    margin-bottom: 16px;
+    background-color: transparent; /* Keep background consistent with parent */
+    padding: 8px 0px 8px 25px; /* Reduced padding for tighter appearance */
+    display: block; /* Ensures proper display regardless of content */
+    box-shadow: none; /* Remove any shadow that might affect appearance */
+    line-height: 1.3; /* Tighter line height for more compact lists */
+    font-size: 18px;
+}
+
+.summary-content li
+{
+    margin-bottom: 5px; /* Reduced margin between list items */
+    position: relative;
+    list-style-type: disc;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.3; /* Tighter line height for more compact display */
+    padding-left: 5px; /* Add left padding for better readability */
+    padding-bottom: 0;
+    display: list-item !important; /* Force list item display */
+}
+
+/* Special styling for the Most Common Acupoints section - use a class that we'll add via JS */
+.acupoints-section li
+{
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Make bold elements in list items stand out */
+.summary-content li strong
+{
+    color: #285987;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+/* Simple styling for acupoint section bullets */
+.acupoints-section li
+{
+    padding: 4px 8px;
+    border-left: 3px solid #33a5d2;
+    margin-bottom: 5px; /* Consistent with other list items */
+    padding-bottom: 0;
+    background-color: transparent;
+    line-height: 1.3; /* Tighter line height for compact display */
+}
+
+/* Style for bold text in summaries */
+.summary-content li strong,
+.summary-content li b 
+{
+    font-weight: bold;
+}
+
+.summary-content li::marker
+{
+    color: #33a5d2;
+    font-weight: bold;
+}
+
+/* Fix nested lists that might come from Gemini */
+.summary-content li ul
+{
+    margin-top: 8px;
+    margin-bottom: 0;
+    background-color: transparent;
+    padding-bottom: 0;
+    box-shadow: none;
+}
+
+/* Special class for compact lists with no extra space between items */
+.compact-lists ul, .compact-lists ol
+{
+    margin-bottom: 12px;
+    padding: 5px 0px 5px 25px;
+    line-height: 1.3;
+}
+
+.compact-lists li
+{
+    margin-bottom: 4px !important;
+    padding-bottom: 0;
+    line-height: 1.3;
+}
+
+.compact-lists li:last-child
+{
+    margin-bottom: 0 !important;
+}
+
+/* Remove empty text nodes between list items */
+.compact-lists ul *, .compact-lists ol *
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.summary-content p
+{
+    margin-bottom: 16px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Ensure proper margins for paragraphs after headings */
+.summary-content h2 + p,
+.summary-content h3 + p
+{
+    margin-top: 10px;
+}
+
+/* API Key Settings */
+.api-settings
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.api-provider-selector
+{
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+    min-width: 110px;
+    cursor: pointer;
+}
+
+.api-key-button
+{
+    background-color: #33a5d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.api-key-button:hover
+{
+    background-color: #2187b2;
+}
+
+#api-status
+{
+    font-size: 14px;
+    font-weight: bold;
+}

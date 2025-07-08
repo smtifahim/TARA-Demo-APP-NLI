@@ -1,0 +1,41 @@
+# List of all Meridians along with their synonyms
+# The query returns only those meridian studied in some article
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX TARA: <http://www.acupunctureresearch.org/tara/ontology/>
+
+SELECT DISTINCT
+?Meridian_IRI ?Meridian_Synonym
+
+WHERE
+{
+    ?Meridian_IRI rdfs:subClassOf+/rdfs:label "Meridian".
+    ?Meridian_IRI rdfs:label ?Meridian_Label.
+    
+    ?Acupoint_IRI TARA:hasMeridian ?Meridian_IRI.
+    
+    # Only include the meridian acupoints that are studied in some article. 
+    ?Acupoint_IRI TARA:isStudiedInArticle ?Studied_Article_IRI.
+    
+    OPTIONAL
+    {
+        { 
+            ?Meridian_IRI rdfs:label | TARA:hasSynonym | TARA:hasChineseName ?Meridian_Synonym. 
+        }
+        
+        UNION
+        { 
+            ?Meridian_IRI rdfs:subClassOf* ?Meridian_Category_IRI.
+            ?Meridian_Category_IRI rdfs:subClassOf*/rdfs:label "Meridian".
+            ?Meridian_Category_IRI rdfs:label|TARA:hasSynonym ?Meridian_Synonym.
+            FILTER (?Meridian_Synonym in ('Primary meridian', 'Extra Meridian', 'Main Meridian')).
+        }
+    }
+    
+   # FILTER (!regex(str(?Acupoint_Label), 'Acupoint of|Meridian Acupoint|Point of|Point|Extra Acupoint'))
+}
+ORDER BY ?Meridian_Label
+LIMIT 2000

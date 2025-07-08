@@ -1,0 +1,682 @@
+{
+  "head": {
+    "vars": [
+      "Body_Region_IRI",
+      "Body_Region_Synonym"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000033"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "head (volume)"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000033"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "head"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "stylopod of hind limb"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "proximal segment of free lower limb"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb stylopod"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb stylopodium"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb propodium"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb stylopodium"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "hind propodium"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "upper leg"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb stylopod"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "thigh"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "stylopod of lower limb"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "stylopod of hindlimb"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008784"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "free lower limb segment"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008784"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "free lower limb subdivision"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008784"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "subdivision of free lower limb"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008784"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "lower limb segment"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008784"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "segment of free lower limb"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002101"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "limb"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000978"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "leg"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000974"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "neck"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001460"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "arm"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004454"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "tarsal limb segment"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004454"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "ankle region"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004454"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "tarsal region"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004454"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "ankle"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001456"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "face"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008785"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "subdivision of free upper limb"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008785"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "segment of free upper limb"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001461"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "cubital region"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008785"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "free upper limb segment"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008785"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "free upper limb subdivision"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001461"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "elbow"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001461"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "elbow region"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001461"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "elbow limb segment"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008785"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "upper limb segment"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001465"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "knee region"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001465"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "knee"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001467"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "shoulder"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002100"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "trunk"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "abdominal back"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "lower back"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "back of abdomen"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "regio lumbalis"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "posterior part of abdomen"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "dorsum of abdomen"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "lumbar region of back"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "lumbar part of back"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006061"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "vertebra process"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006061"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "process of vertebra"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006061"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "vertebral process"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000916"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "abdominopelvic region"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000916"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "abdomen"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000916"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "abdominopelvis"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "posterior part of thorax"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic back"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "dorsal thoracic segment of trunk"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "dorsum of thorax"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic part of back"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "upper back"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013691"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "clunis"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013691"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "buttock"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013691"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "gluteal part of pelvic girdle"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013691"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "regio glutealis"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013691"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "gluteal region"
+        }
+      },
+      {
+        "Body_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795301"
+        },
+        "Body_Region_Synonym": {
+          "type": "literal",
+          "value": "upper abdomen"
+        }
+      }
+    ]
+  }
+}

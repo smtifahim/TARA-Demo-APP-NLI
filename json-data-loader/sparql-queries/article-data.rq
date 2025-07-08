@@ -1,0 +1,144 @@
+# List all the acupoints along with their meridians, special point roles, surface locations, and body regions. 
+# Also include the conditions that can be treated using those acupoints including provinance details.
+# Additionally, include the study details.
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ilxtr: <http://uri.interlex.org/tgbugs/uris/readable/>
+PREFIX TARA: <http://www.acupunctureresearch.org/tara/ontology/>
+
+SELECT DISTINCT
+?Acupoint_IRI ?Acupoint
+# ?Acupoint_Category_IRI ?Acupoint_Category
+?Meridian_IRI ?Meridian
+
+?Special_Point_Role_IRI ?Special_Point_Role
+?Special_Point_Category_IRI ?Special_Point_Category
+
+?Surface_Region_IRI ?Surface_Region
+?Related_Region_IRI ?Related_Region
+?Body_Region_IRI ?Body_Region
+
+?Studied_Article_IRI ?Studied_Article_Title
+?Authors ?Publication_Venue ?Publication_Date
+?Country ?Trial_Type ?Modality ?Stimulation_Type
+?Needling_Info ?Sample_Size ?Controls ?Trial_Type
+?Listed_Acupoints
+
+?Studied_Condition_IRI ?Studied_Condition ?Condition_Note
+?Condition_Context_IRI ?Condition_Context
+
+WHERE 
+{
+   # FILTER (REGEX (?Condition_Context, 'Pain')).
+   # FILTER (REGEX (?Acupoint, 'LU')).
+   # FILTER (REGEX (?Acupoint_Category, 'Extra')).
+   # FILTER (?Meridian = "Main Meridian")
+   # FILTER (?Body_Region = 'chest').
+   # FILTER (?Surface_Region = 'pedal digit 1').
+    FILTER (?Studied_Article_IRI != ''). # only show the results with articles data
+
+    
+    ?Acupoint_IRI rdfs:subClassOf*/rdfs:label "Acupoint".
+    ?Acupoint_IRI rdfs:label ?Acupoint.    
+    
+    # OPTIONAL
+    # {
+    #   ?Acupoint_IRI rdfs:subClassOf* ?Acupoint_Category_IRI.
+    #   ?Acupoint_Category_IRI rdfs:subClassOf*/rdfs:label "Acupoint".
+    #   ?Acupoint_Category_IRI rdfs:label ?Acupoint_Category.
+    #   FILTER (?Acupoint_Category in ('Meridian Acupoint', 'Extra Acupoint' , 'Special Point')).
+    # }
+    
+    OPTIONAL 
+    {
+        ?Acupoint_IRI TARA:hasMeridian ?Meridian_IRI.
+        ?Meridian_IRI rdfs:subClassOf*/rdfs:label "Meridian".
+        ?Meridian_IRI rdfs:label ?Meridian.
+    }
+
+    OPTIONAL 
+    {
+        ?Acupoint_IRI TARA:hasDesignatedSpecialPointRole ?Special_Point_Role_IRI. 
+        ?Special_Point_Role_IRI rdfs:label ?Special_Point_Role.
+
+        ?Special_Point_Role_IRI rdfs:subClassOf* ?Special_Point_Category_IRI.
+        ?Special_Point_Category_IRI rdfs:subClassOf+/rdfs:label 'Special Point'.
+        
+        ?Special_Point_Category_IRI rdfs:label ?Special_Point_Category.
+    }
+    
+  OPTIONAL
+  {
+        ?Acupoint_IRI TARA:hasSurfaceLocation ?Surface_Region_IRI.
+        ?Surface_Region_IRI rdfs:label ?Surface_Region.
+        
+        OPTIONAL
+        {
+            ?Acupoint_IRI TARA:hasRelatedLocation ?Related_Region_IRI.
+            ?Related_Region_IRI rdfs:label ?Related_Region.
+        }
+
+        OPTIONAL
+        {
+            ?Surface_Region_IRI  (rdfs:subClassOf* | ilxtr:isPartOf*) ?Body_Region_IRI.
+            ?Body_Region_IRI rdfs:label ?Body_Region.
+            FILTER (?Body_Region in (
+                                     ## According to the regions of the body from WHO Standard Acupoints Book (page 5)
+                                     # Head, Face, Neck, Back 
+                                     'head', 'face', 'neck', 'lower back', 'trunk', 'dorsal thoracic segment of trunk', 'scapular region',
+                                     # Chest, Abdomen,
+                                     'chest', 'process of vertebra', 'abdomen', 'upper abdomen', 'lower abdomen',
+                                     # Upper Limb, Lower Limb, Perinial region
+                                     'perineum', 'limb', 'lower limb segment', 'upper limb segment', 
+                                     'arm', 'elbow', 'forearm', 'hand', 'shoulder', 'knee',
+                                     'leg', 'foot', 'tarsal region', 'buttock', 'hindlimb stylopod' # thigh
+                                     )
+                   ).
+        }
+    FILTER (?Surface_Region != ?Related_Region)
+  }
+
+ OPTIONAL
+    {
+        ?Acupoint_IRI TARA:isStudiedInArticle ?Studied_Article_IRI.
+        ?Studied_Article_IRI dc:title ?Studied_Article_Title;
+                             TARA:hasAuthor ?Authors.
+        
+        OPTIONAL {?Studied_Article_IRI TARA:hasPublicationVenue ?Publication_Venue.}
+        OPTIONAL {?Studied_Article_IRI TARA:hasPublicationDate ?Publication_Date.}
+        OPTIONAL {?Studied_Article_IRI  TARA:hasCountryInformation ?Country.}
+
+        OPTIONAL {?Studied_Article_IRI  TARA:hasTrialType ?Trial_Type.}
+
+        OPTIONAL {?Studied_Article_IRI  TARA:hasAcupunctureModality ?Modality.}
+        
+        OPTIONAL {?Studied_Article_IRI  TARA:hasStimulationType ?Stimulation_Type.}
+        OPTIONAL {?Studied_Article_IRI  TARA:hasNeedlingInformation ?Needling_Info.}
+        OPTIONAL {?Studied_Article_IRI  TARA:hasSampleSizeInformation ?Sample_Size.}
+        OPTIONAL {?Studied_Article_IRI  TARA:hasControlsInformation ?Controls.}
+        
+        OPTIONAL {?Studied_Article_IRI  TARA:hasListedAcupointsUsed ?Listed_Acupoints.}
+        
+        OPTIONAL {?Studied_Article_IRI TARA:hasStudiedCondition ?Studied_Condition_IRI.
+                  ?Studied_Condition_IRI  rdfs:label ?Studied_Condition.}
+        
+        OPTIONAL {?Studied_Article_IRI TARA:hasStudiedConditionNote ?Condition_Note.}
+        
+        OPTIONAL {?Studied_Article_IRI TARA:hasStudiedConditionContext ?Condition_Context_IRI.
+                  ?Condition_Context_IRI rdfs:label ?Condition_Context.}
+
+    }
+
+    # Exclude generic categorization classes like 'Acupoint of the X Meridian'. Meridian Acupoint, 'Special Points', etc.
+    FILTER (!regex(str(?Acupoint), 'Acupoint of|Meridian|Point of|Point|Extra Acupoint'))
+   
+    # # To have the curie form of the acupoint_iri in the query result. 
+    # # Jupyter's SPARQL kernel does not return the curie form by default.
+    # BIND (REPLACE(STR(?Acupoint_IRI), "http://www.acupunctureresearch.org/tara/ontology/acupoints.owl#", 
+    #                                   "TARA:") AS ?Acupoint_curie) 
+}
+ORDER BY 
+    DESC(?Publication_Date) ?Acupoint ?Meridian ?Special_Point_Role ?Special_Point_Category 
+    ?Surface_Region ?Related_Region ?Body_Region
+limit 30000

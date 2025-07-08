@@ -1,0 +1,426 @@
+// Claude API Integration for TARA Acupoint Research NLI
+
+// Configuration settings for Claude API
+const CLAUDE_CONFIG = {
+    apiEndpoint: "https://api.anthropic.com/v1/messages",
+    apiVersion: "2023-06-01",  // Current production API version
+    model: "claude-3-opus-20240229",  // Model that's confirmed working with my API key
+    defaultSystemPrompt: `You are an AI assistant specialized in analyzing acupuncture research queries. 
+    Extract search parameters from natural language queries about acupuncture research.
+    Return a JSON with these fields if found in the query:
+    - acupoint: The name of any acupoint mentioned (e.g., "LI4", "Hegu", "ST36")
+    - meridian: Any meridian mentioned (e.g., "Lung", "Large Intestine", "Heart")
+    - special_point_category: Any special point category (e.g., "Yuan Source", "Five Shu", "Back Shu")
+    - surface_region: Anatomical surface region (e.g., "forearm", "face", "knee")
+    - related_region: Related anatomical region (e.g., "stomach", "liver", "intestines")
+    - body_region: Body region (e.g., "upper limb", "trunk", "head")
+    - studied_condition: Health condition being researched (e.g., "lower back pain", "migraine", "insomnia")
+    - condition_context: Context of the condition (e.g., "pain management", "neurological", "digestive")
+    - country: Country where research was conducted (e.g., "China", "United States")
+    Only include fields for which you have extracted values from the query.
+    `
+};
+
+// Store API key securely in session storage (not visible in code)
+let CLAUDE_API_KEY = "";
+
+// Attempt to load the API key from session storage when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    CLAUDE_API_KEY = sessionStorage.getItem("claude_api_key") || "";
+});
+
+// Function to set API key
+function setClaudeApiKey(apiKey) {
+    if (apiKey) {
+        CLAUDE_API_KEY = apiKey;
+        // Store in session storage (cleared when browser is closed)
+        sessionStorage.setItem("claude_api_key", apiKey);
+        return true;
+    }
+    return false;
+}
+
+// Check if API key is set
+function isClaudeApiKeySet() {
+    return CLAUDE_API_KEY !== "";
+}
+
+// Prompt for API key if not set
+function promptForApiKey() {
+    if (!isClaudeApiKeySet()) {
+        const apiKey = prompt("Please enter your Claude API key:");
+        if (apiKey) {
+            setClaudeApiKey(apiKey);
+            return true;
+        }
+        return false;
+    }
+    return true;
+}
+
+// No offline mode functions needed
+
+// Extract filters from natural language query using Claude
+async function extractFiltersWithClaude(query) {
+    // Make sure we have an API key
+    if (!promptForApiKey()) {
+        throw new Error("Claude API key is required for natural language processing");
+    }
+    
+    // Show loading indicator
+    document.getElementById('results').innerHTML = '<p>Analyzing your question with Claude...</p>';
+    
+    try {
+        // Check if we should use the proxy
+        const useProxy = isClaudeApiProxyEnabled && isClaudeApiProxyEnabled();
+        
+        // Log the request details for debugging
+        console.log(`Sending request to Claude API with model: ${CLAUDE_CONFIG.model} ${useProxy ? 'via proxy' : 'directly'}`);
+        
+        let data;
+        const requestData = {
+            model: CLAUDE_CONFIG.model,
+            system: CLAUDE_CONFIG.defaultSystemPrompt,
+            messages: [
+                {
+                    role: "user",
+                    content: query
+                }
+            ],
+            max_tokens: 1000
+        };
+        
+        if (useProxy) {
+            // Use proxy function
+            data = await callClaudeApiWithProxy(requestData, CLAUDE_API_KEY);
+        } else {
+            // Direct API call
+            const response = await fetch(CLAUDE_CONFIG.apiEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-api-key': CLAUDE_API_KEY,
+                    'anthropic-version': CLAUDE_CONFIG.apiVersion
+                },
+                mode: 'cors',
+                body: JSON.stringify(requestData)
+            });
+        
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Claude API error: ${response.status} ${errorText}`);
+        }
+        
+        const data = await response.json();
+        
+        // Extract the JSON from Claude's response
+        const content = data.content && data.content[0] && data.content[0].text;
+        if (!content) {
+            throw new Error("Invalid response from Claude API");
+        }
+        
+        // Parse the JSON content from Claude's response
+        // Look for JSON in the response text (it might be surrounded by markdown or other text)
+        const jsonMatch = content.match(/```json([\s\S]*?)```/) || 
+                          content.match(/\{[\s\S]*?\}/);
+                          
+        let parsedFilters = {};
+        
+        if (jsonMatch) {
+            try {
+                // If we found JSON in markdown code block, extract just the JSON part
+                const jsonStr = jsonMatch[0].startsWith('```') ? jsonMatch[1].trim() : jsonMatch[0];
+                parsedFilters = JSON.parse(jsonStr);
+            } catch (e) {
+                console.error("Failed to parse JSON from Claude response:", e);
+            }
+        } else {
+            console.warn("No JSON found in Claude response:", content);
+        }
+        
+        // Log the extracted filters
+        console.log("Extracted filters:", parsedFilters);
+        return parsedFilters;
+    } catch (error) {
+        console.error("Error calling Claude API:", error);
+        document.getElementById('results').innerHTML = `<p>Error analyzing your question: ${error.message}</p>`;
+        return {};
+    }
+}
+
+// Add summarization function using Claude
+async function summarizeResultsWithClaude(query, results) {
+    // Make sure we have an API key
+    if (!promptForApiKey()) {
+        return "API key required for summarization";
+    }
+    
+    try {
+        // Extract key information from results to limit token usage
+        const summarizedResults = extractSummaryDataFromResults(results);
+        
+        // Check if we should use the proxy
+        const useProxy = isClaudeApiProxyEnabled && isClaudeApiProxyEnabled();
+        console.log(`Summarizing results ${useProxy ? 'using proxy' : 'with direct API call'}`);
+        
+        // Create prompt for Claude to summarize the results
+        const summarizationPrompt = `
+User query: "${query}"
+
+Here are the search results:
+${JSON.stringify(summarizedResults, null, 2)}
+
+Please provide a concise summary of these research findings. 
+Focus on the relationship between acupoints and conditions studied, 
+key findings, and patterns across the research articles. 
+Keep your summary under 250 words.`;
+
+        // Prepare the request data
+        const requestData = {
+            model: CLAUDE_CONFIG.model,
+            system: "You are an assistant that summarizes acupuncture research findings concisely and accurately.",
+            messages: [
+                {
+                    role: "user",
+                    content: summarizationPrompt
+                }
+            ],
+            max_tokens: 1000
+        };
+        
+        let data;
+        
+        if (useProxy) {
+            // Use proxy function
+            data = await callClaudeApiWithProxy(requestData, CLAUDE_API_KEY);
+        } else {
+            // Direct API call
+            const response = await fetch(CLAUDE_CONFIG.apiEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-api-key': CLAUDE_API_KEY,
+                    'anthropic-version': CLAUDE_CONFIG.apiVersion
+                },
+                mode: 'cors',
+                body: JSON.stringify(requestData)
+            });
+            
+            if (!response.ok) {
+                // If direct call fails with a network error and proxy is available, try with proxy
+                if ((response.status === 0 || response.status === 520) && typeof callClaudeApiWithProxy === 'function') {
+                    console.log("Direct API call for summarization failed, trying with proxy...");
+                    // Auto-enable proxy for future requests
+                    if (typeof toggleClaudeApiProxy === 'function') {
+                        toggleClaudeApiProxy(true);
+                    }
+                    data = await callClaudeApiWithProxy(requestData, CLAUDE_API_KEY);
+                } else {
+                    // Other API error
+                    const errorText = await response.text();
+                    throw new Error(`Claude API error: ${response.status} ${errorText}`);
+                }
+            } else {
+                data = await response.json();
+            }
+        }
+        
+        const content = data.content && data.content[0] && data.content[0].text;
+        
+        if (!content) {
+            throw new Error("Invalid response from Claude API");
+        }
+        
+        return content;
+    } catch (error) {
+        console.error("Error calling Claude API for summarization:", error);
+        
+        // Add suggestion to try proxy if it was a network error
+        const useProxy = isClaudeApiProxyEnabled && isClaudeApiProxyEnabled();
+        let errorMessage = error.message;
+        
+        if (!useProxy && (error.message.includes("Failed to fetch") || error.message.includes("NetworkError"))) {
+            errorMessage += ". Try enabling the proxy server option.";
+        }
+        
+        return `Error generating summary: ${errorMessage}`;
+    }
+}
+
+// Helper function to extract relevant data for summary
+function extractSummaryDataFromResults(resultsDiv) {
+    const articles = [];
+    
+    // Extract article information from the DOM
+    const articleGroups = resultsDiv.querySelectorAll('.article-group');
+    articleGroups.forEach(group => {
+        const article = {
+            title: group.querySelector('strong')?.textContent || 'Unknown',
+            conditions: [],
+            acupoints: []
+        };
+        
+        // Extract conditions
+        const conditionElements = group.querySelectorAll('td a');
+        conditionElements.forEach(el => {
+            if (el.textContent) {
+                article.conditions.push(el.textContent.trim());
+            }
+        });
+        
+        // Extract acupoints (may need adjustment based on your actual DOM structure)
+        const acupointElements = group.querySelectorAll('.acupoint-item');
+        acupointElements.forEach(el => {
+            if (el.textContent) {
+                article.acupoints.push(el.textContent.trim());
+            }
+        });
+        
+        articles.push(article);
+    });
+    
+    return articles;
+}
+
+// Function to validate the Claude API key
+async function validateClaudeApiKey(apiKey) {
+    try {
+        const testPrompt = "Say hello.";
+        
+        // Use provided key or the stored one
+        const keyToTest = apiKey || CLAUDE_API_KEY;
+        
+        if (!keyToTest) {
+            return {
+                valid: false,
+                message: "No API key provided"
+            };
+        }
+        
+        console.log("Validating Claude API key...");
+        console.log(`Using API version: ${CLAUDE_CONFIG.apiVersion}, model: ${CLAUDE_CONFIG.model}`);
+        
+        // Add CORS headers for debugging
+        const fetchOptions = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': keyToTest,
+                'anthropic-version': CLAUDE_CONFIG.apiVersion
+            },
+            mode: 'cors', // Add explicit CORS mode
+            body: JSON.stringify({
+                model: CLAUDE_CONFIG.model,
+                max_tokens: 10,
+                messages: [
+                    {
+                        role: "user",
+                        content: testPrompt
+                    }
+                ]
+            })
+        };
+        
+        console.log("Sending API validation request with options:", JSON.stringify({
+            url: CLAUDE_CONFIG.apiEndpoint,
+            method: fetchOptions.method,
+            headers: {
+                'Content-Type': fetchOptions.headers['Content-Type'],
+                'anthropic-version': fetchOptions.headers['anthropic-version'],
+                // Don't log the actual API key
+                'x-api-key': 'API_KEY_HIDDEN'
+            },
+            mode: fetchOptions.mode,
+            bodyPreview: "Request body contains model and messages"
+        }));
+        
+        // Make a minimal test request to Claude API
+        const response = await fetch(CLAUDE_CONFIG.apiEndpoint, fetchOptions);
+        
+        // Log the response status
+        console.log("API validation response status:", response.status);
+        
+        if (response.ok) {
+            // Try to parse the response as JSON to confirm it's valid
+            try {
+                const data = await response.json();
+                console.log("API validation successful");
+                return {
+                    valid: true,
+                    message: "API key is valid"
+                };
+            } catch (jsonError) {
+                console.error("Error parsing API validation response:", jsonError);
+                return {
+                    valid: false,
+                    message: `Error parsing API response: ${jsonError.message}`
+                };
+            }
+        } else {
+            // Handle different error status codes
+            console.error("API validation failed with status:", response.status);
+            
+            // Try to get error details
+            try {
+                const errorData = await response.json();
+                console.error("API error details:", errorData);
+                
+                // Check for specific error types
+                if (errorData.error?.type === "authentication_error") {
+                    return {
+                        valid: false,
+                        message: "Invalid API key: Authentication failed",
+                        details: errorData
+                    };
+                } else {
+                    return {
+                        valid: false,
+                        message: `API key validation failed: ${errorData.error?.message || response.statusText}`,
+                        details: errorData
+                    };
+                }
+            } catch (jsonError) {
+                // If we can't parse the error as JSON
+                return {
+                    valid: false,
+                    message: `API request failed: ${response.status} ${response.statusText}`,
+                    status: response.status
+                };
+            }
+        }
+    } catch (error) {
+        console.error("Network or other error during API validation:", error);
+        
+        // More detailed error information
+        let errorDetails = "Unknown error";
+        if (error.name === "TypeError" && error.message.includes("Failed to fetch")) {
+            errorDetails = `CORS or network issue: ${error.message}. This may be due to:
+                1. No internet connection
+                2. CORS policy blocking the request
+                3. A network firewall or security software
+                4. The API endpoint being unreachable`;
+                
+            // Let's add a useful suggestion
+            console.log("Suggestion: Try using a proxy server or server-side API call to avoid CORS issues");
+        } else {
+            errorDetails = `${error.name}: ${error.message}`;
+        }
+        
+        return {
+            valid: false,
+            message: `Error validating API key: ${error.message}`,
+            details: errorDetails,
+            error: error
+        };
+    }
+}
+
+// This area previously contained offline filter extraction code
+// It has been removed as we now use the Claude API exclusively
+
+// Make functions available globally
+window.extractFiltersWithClaude = extractFiltersWithClaude;
+window.summarizeResultsWithClaude = summarizeResultsWithClaude;
+window.setClaudeApiKey = setClaudeApiKey;
+window.validateClaudeApiKey = validateClaudeApiKey;
+window.isClaudeApiKeySet = isClaudeApiKeySet;

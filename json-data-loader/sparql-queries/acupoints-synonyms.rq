@@ -1,0 +1,42 @@
+# Acupoints with all the labels, synonyms, and chienese names as synonyms
+# It only pulls those acupoints studied in some article.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX TARA: <http://www.acupunctureresearch.org/tara/ontology/>
+
+SELECT DISTINCT
+?Acupoint_IRI 
+#?Acupoint_Label
+?Acupoint_Synonym  # Including Chinese Name and Category
+
+WHERE
+{
+    ?Acupoint_IRI rdfs:subClassOf+/rdfs:label "Acupoint".
+    ?Acupoint_IRI rdfs:label ?Acupoint_Label.
+    
+    # Only include the acupoints that are studied in some article
+    ?Acupoint_IRI TARA:isStudiedInArticle ?Studied_Article_IRI.
+    
+    OPTIONAL
+    {
+        { 
+            ?Acupoint_IRI rdfs:label | TARA:hasSynonym | TARA:hasChineseName ?Acupoint_Synonym. 
+        }
+        
+        UNION
+        { 
+            ?Acupoint_IRI rdfs:subClassOf* ?Acupoint_Category_IRI.
+            ?Acupoint_Category_IRI rdfs:subClassOf*/rdfs:label "Acupoint".
+            ?Acupoint_Category_IRI rdfs:label|TARA:hasSynonym ?Acupoint_Synonym.
+            FILTER (?Acupoint_Synonym in ('Meridian Acupoint', 'Extra Acupoint', 
+                                            'Special Point', 'Special Acupoint')).
+        }
+    }
+    
+    FILTER (!regex(str(?Acupoint_Label), 'Acupoint of|Meridian Acupoint|Point of|Point|Extra Acupoint'))
+}
+ORDER BY ?Acupoint_Label
+LIMIT 2000

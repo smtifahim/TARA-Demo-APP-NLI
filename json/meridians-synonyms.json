@@ -1,0 +1,962 @@
+{
+  "head": {
+    "vars": [
+      "Meridian_IRI",
+      "Meridian_Synonym"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_7525476"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridan of the urinary bladder"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_7525476"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_7525476"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Bladder Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_7525476"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "urinary bladder meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_7525476"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Bladder Meridian of Foot-Taiyang"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_7525476"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "BL"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_7525476"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_7525476"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "UB"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_7525476"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the bladder"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6789717"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Extra Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6789717"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "CV"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6789717"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Ren Channel"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6789717"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Conception Vessel"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6789717"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "RN"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5283975"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "GB"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5283975"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Gallbladder Meridian of Foot-Shaoyang"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5283975"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the gallbladder"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5283975"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the gall bladder"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5283975"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5283975"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "gall bladder meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5283975"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Gallbladder Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5283975"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_0386099"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Du Channel"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_0386099"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Du"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_0386099"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Extra Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_0386099"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Governor Vessel"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_0386099"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "GV"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9474009"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the heart"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9474009"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Heart Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9474009"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Heart Meridian of Hand-Shaoyin"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9474009"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9474009"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9474009"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "HT"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4813389"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Kidney Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4813389"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4813389"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4813389"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Kidney Meridian of Foot-Shaoyin"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4813389"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the kidney"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4813389"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "KI"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4610474"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4610474"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Large Intestine Meridian of Hand-Yangming"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4610474"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "LI"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4610474"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Large Intestine Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4610474"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the large intestine"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4610474"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5419503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "LR"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5419503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5419503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Liver Meridian of Foot-Jueyin"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5419503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Liver Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5419503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the liver"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_5419503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9964503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Lung Meridian of Hand-Taiyin"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9964503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Lung Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9964503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the lung"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9964503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "LU"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9964503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9964503"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4694897"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Pericardium Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4694897"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "PC"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4694897"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Pericardium Meridian of Hand-Jueyin"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4694897"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4694897"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4694897"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the pericardiam"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9093316"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the small intenstine"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9093316"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9093316"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9093316"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Small Intestine Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9093316"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "SI"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_9093316"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Small Intestine Meridian of Hand-Taiyang"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4167850"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "SP"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4167850"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Spleen Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4167850"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of the spleen"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4167850"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4167850"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_4167850"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Spleen Meridian of Foot-Taiyin"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6221269"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "ST"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6221269"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridan of the stomach"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6221269"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Stomach Meridian of Foot-Yangming"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6221269"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Stomach Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6221269"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_6221269"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Triple Warmer Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Triple Heater Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "TB"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "TW"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Main Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "TE"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Triple Burner Meridan"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "SJ"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Triple Energizer Meridian of Hand-Shaoyang"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "meridian of triple energizer"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "San Jiao"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Sanjiao"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Triple Energizer Meridian"
+        }
+      },
+      {
+        "Meridian_IRI": {
+          "type": "uri",
+          "value": "http://www.acupunctureresearch.org/tara/ontology/TARA_3898257"
+        },
+        "Meridian_Synonym": {
+          "type": "literal",
+          "value": "Primary meridian"
+        }
+      }
+    ]
+  }
+}

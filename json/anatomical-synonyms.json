@@ -1,0 +1,5892 @@
+{
+  "head": {
+    "vars": [
+      "Anatomical_Region_IRI",
+      "Anatomical_Region_Synonym"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011050"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic vertebra 8"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007118"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "navel"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007118"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "umbilical part of abdomen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007118"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "umbilical region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007118"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "umbilicus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001450"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "calcaneus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001450"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "calcaneal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001450"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "calcaneum"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001450"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "calcaneus bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001450"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "os calcis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002387"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pes"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002387"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foot"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002387"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb autopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002387"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb autopodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002387"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb distal free limb segment"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002387"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "terminal segment of free lower limb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001456"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "face"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001597"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "masseter muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001597"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "masseter"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001684"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "mandible"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001684"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "inferior maxillary bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001684"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "mammaliam mandible"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001684"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "mandibulla"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "manual digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "5th digit of hand"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "5th finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digit 5 of fore-paw"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth digit of hand"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "finger 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fore digit V"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fore limb digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hand digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003625"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "manual digit V"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004300"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "distal phalanx"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004300"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "phalanx distalis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004300"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "terminal phalanx"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004300"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "ungual phalanx"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011277"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "nail of manual digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011277"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "claw of digit 5 of fore-paw"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011277"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "little finger nail"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011277"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "nail of fifth finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011277"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "nail of manual digit V"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011277"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "nail plate of little finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000033"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "head"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000033"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "head (volume)"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011220"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "mastoid process of temporal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011220"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "mastoid process"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011220"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "mastoid process of skull"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000974"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "neck"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001093"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "vertebral bone 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001093"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "axis (CII)"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001093"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "axis [C II]"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001093"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "axis vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001093"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "cervical axis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001093"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "vertebra 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002380"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "trapezius muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002380"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "trapezius"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006726"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "outer canthus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006726"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lateral canthus of eye"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006726"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lateral palpebral commissure"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004104"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hairline"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003653"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003653"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foot digit 4 metatarsal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003653"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fourth metatarsal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003653"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003653"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal IV"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003653"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003653"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of digit IV"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003653"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of foot digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003653"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 4 metatarsal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003653"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 4 metatarsus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003654"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003654"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth metatarsal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003654"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foot digit 5 metatarsal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003654"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003654"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal V"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003654"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003654"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of digit V"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003654"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of foot digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003654"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 5 metatarsal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003654"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 5 metatarsus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007759"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsophalangeal joint of pedal digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007759"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsophalangeal joint of fourth digit of foot"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007759"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsophalangeal joint of pedal digit IV"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003701"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "calcaneal tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003701"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "Achille's tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003701"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "Achilles tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003701"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "Achilles' tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003701"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tendo Achillis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003701"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tendo calcaneus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002503"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "greater trochanter"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002503"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "great trochanter"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002503"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "greater trochanter of femur"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013691"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "buttock"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013691"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "clunis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013691"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "gluteal part of pelvic girdle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013691"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "gluteal region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013691"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "regio glutealis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013708"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "anterior superior iliac spine"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013708"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "anterior superior iliac spine (volume)"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011124"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "xiphisternal joint"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011124"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "synchondrosis xiphisternalis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795285"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "anterior median line"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic vertebra 7"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "T7 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "seventh dorsal vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "seventh thoracic vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "dorsal thoracic segment of trunk"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "dorsum of thorax"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "posterior part of thorax"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic back"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic part of back"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008231"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "upper back"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "5 th digit of hand metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "5 th digit of hand metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "5 th finger metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "5 th finger metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth finger metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth finger metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "finger 5 metacarpus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hand digit 5 metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hand digit 5 metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "manual digit 5 metacarpus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal V"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of 5 th digit of hand"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of 5 th finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of digit V"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of fifth finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of hand digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of 5 th digit of hand"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of 5 th finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of fifth finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003649"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of hand digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004452"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "carpal region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004452"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "carpal limb segment"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004452"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "carpal segment"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004452"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fore basipodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004452"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fore mesopodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004452"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hand mesopodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004452"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "manus mesopodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004452"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "regio carpalis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004452"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "wrist"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004452"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "wrist region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "forelimb zeugopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "antebrachial region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "antebrachium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "antibrachium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "arm middle limb segment"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "arm zeugopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "brachial region middle limb segment"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "brachial region zeugopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "forearm"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "forelimb epipodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "forelimb zeugopodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "forelimb zygopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "intermediate segment of free upper limb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lower arm"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lower segment of arm"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "middle limb segment of arm"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "middle limb segment of brachial region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "middle limb segment of forelimb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "middle limb segment of proximal segment of free upper limb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "regio antebrachialis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "zeugopod of arm"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "zeugopod of brachial region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "zeugopod of forelimb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002386"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "zeugopod of proximal segment of free upper limb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795332"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "cubital crease"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001421"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pectoral girdle region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001421"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "cingulum membri superioris"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001421"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "girdle - pectoral"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000979"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tibia"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000979"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "shankbone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000979"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "shinbone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002446"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "patella"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb zeugopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "crus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "crus of hindlimb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb middle limb segment"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb zeudopodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb zeugopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb epipodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb middle limb segment"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb zeudopodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb zeugopodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "intermediate segment of free lower limb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lower extremity middle limb segment"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lower extremity zeugopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lower leg"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "middle limb segment of hind limb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "middle limb segment of hindlimb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "shank"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "zeugopod of hind limb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003823"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "zeugopod of hindlimb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "2 nd digit of hand metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "2 nd digit of hand metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "2 nd finger metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "2 nd finger metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "finger 2 metacarpus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hand digit 2 metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hand digit 2 metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "manual digit 2 metacarpus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal II"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of 2 nd digit of hand"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of 2 nd finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of digit II"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of hand digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of second finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of 2 nd digit of hand"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of 2 nd finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of hand digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of second finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "second finger metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "second finger metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003646"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "second metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0794954"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "dorsum of the hand"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004620"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lumbar vertebra 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004620"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "L4 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004620"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fourth lumbar vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lower back"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "abdominal back"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "back of abdomen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "dorsum of abdomen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lumbar part of back"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lumbar region of back"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "posterior part of abdomen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005462"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "regio lumbalis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004618"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lumbar vertebra 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004618"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "L2 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004618"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "second lumbar vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004628"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic vertebra 3"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004628"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "T3 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004628"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "third dorsal vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004628"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "third thoracic vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001381"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "semimembranosus muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001381"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "musculus semimembranosus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001381"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "semimembranosus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001465"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "knee"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001465"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "knee region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_8480009"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tendon of semitendinosus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_8480009"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "semitendinosus tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic vertebra 6"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "T6 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sixth dorsal vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sixth thoracic vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb stylopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb stylopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb stylopodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind propodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb propodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hindlimb stylopodium"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "proximal segment of free lower limb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "stylopod of hind limb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "stylopod of hindlimb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "stylopod of lower limb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thigh"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000376"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "upper leg"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001446"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fibula"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0012291"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lateral malleolus of fibula"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004636"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic vertebra 12"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004636"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "T12 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004636"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "twelfth dorsal vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004636"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "twelfth thoracic vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001424"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "ulna"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001429"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pisiform"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001429"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pisiform bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001771"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pupil"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001461"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "elbow"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001461"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "cubital region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001461"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "elbow limb segment"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001461"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "elbow region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008188"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tendon of biceps brachii"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008188"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "biceps brachii tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005473"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sacral region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005473"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "back of pelvis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005473"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pelvic back"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005473"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "posterior part of pelvis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005473"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "regio sacralis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0005473"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sacral part of pelvis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fourth metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "4 th digit of hand metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "4 th digit of hand metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "4 th finger metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "4 th finger metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "finger 4 metacarpus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fourth finger metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fourth finger metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hand digit 4 metacarpal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hand digit 4 metacarpal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "manual digit 4 metacarpus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal IV"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of 4 th digit of hand"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of 4 th finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of digit IV"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of fourth finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal bone of hand digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of 4 th digit of hand"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of 4 th finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of fourth finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003648"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpal of hand digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001128"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sternocleidomastoid"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001128"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sterno-mastoid"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001128"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sternocleidomastoid muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001128"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sternomastoid"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001128"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sternomastoid muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004617"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lumbar vertebra 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004617"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "L1 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004617"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "first lumbar vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001423"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "radius bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001423"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "radius"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004626"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic vertebra 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004626"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "T1 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004626"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "first dorsal vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004626"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "first thoracic vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digit 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digit 1 of hind-paw"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digit 1 of pes"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus primus pedis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foot digit 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "great toe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hallex"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hallux"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hallux; digitus primus [I]"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind digit 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind digit I"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb digit 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digit I"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pes digit I"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "preaxial digit of hindlimb"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003631"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001470"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "glenohumeral joint"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001470"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "articulatio humeri"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001470"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "humeral joint"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001476"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "deltoid"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001476"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "deltoid muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001476"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "m. deltoideus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001476"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "musculus deltoideus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "2nd toe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digit 2 of hind-paw"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus secundus [ii]"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus secundus pedis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foot digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind digit II"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digit II"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pes digit II"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "second digit of foot"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "second toe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003632"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001676"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "occipital bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003676"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "patellar ligament"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003676"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "central band of tendon of quadriceps femoris"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003676"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "ligamentum patella"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0016496"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tendon of palmaris longus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0016496"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "palmaris longus tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001374"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "biceps femoris"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001374"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "biceps femoris muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001375"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "semitendinosus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001375"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "semitendinosus muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0036014"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "gluteal sulcus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0036014"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "gluteal fold"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0036014"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sulcus glutealis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004616"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "C7 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004616"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "cervical vertebra 7"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004616"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "prominent vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004616"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "seventh cervical vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004616"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "mammalian cervical vertebra 7"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004616"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "vertebra prominens (CVII)"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004616"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "vertebra prominens [C VII]"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002500"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "zygomatic arch"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002500"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "zygoma"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0010759"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "equine distal sesamoid"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001385"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tibialis anterior"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001385"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tibialis anterior muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001385"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tibialis cranialis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001385"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tibilais cranialis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000981"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "femur"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0000981"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thigh bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic vertebra 11"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "T11 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "eleventh dorsal vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "eleventh thoracic vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0013469"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "external occipital protuberance"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795334"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "palmar wrist crease"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795335"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "abductor pollicis longus tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795336"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "extensor pollicis brevis tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001485"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "knee joint"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001485"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "joint of knee"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0009990"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "medial condyle of tibia"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0009990"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "condylus medialis (tibia)"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0009990"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "condylus medialis tibiae"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004454"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tarsal region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004454"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "ankle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004454"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "ankle region"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004454"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tarsal limb segment"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004621"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lumbar vertebra 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004621"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "L5 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004621"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth lumbar vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digit 3"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "3rd toe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digit 3 of hind-paw"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus tertius (III) pedis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus tertius [iii]"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus tertius pedis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foot digit 3"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind digit 3"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind digit III"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb digit 3"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digit III"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pes digit III"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "third digit of foot"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "third toe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003633"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 3"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001388"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "gastrocnemius"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001388"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "gastrocnemius muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001388"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "m. gastrocnemius"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001388"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "m.gastrocnemius"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007744"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpophalangeal joint of manual digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007744"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpophalangeal joint of digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007744"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpophalangeal joint of fourth digit of hand"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007744"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpophalangeal joint of fourth finger"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0007744"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metacarpophalangeal joint of manual digit IV"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004629"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic vertebra 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004629"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "T4 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004629"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fourth dorsal vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004629"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fourth thoracic vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002497"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "acromion"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002497"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "acromion process"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0002497"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "scapular acromion"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004627"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic vertebra 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004627"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "T2 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004627"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "second dorsal vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004627"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "second thoracic vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006508"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "interosseous muscle of autopod"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006508"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "interosseus muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006508"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "m. interosseous"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_7500078"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "styloid process of radius"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_7500078"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "radial condyle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_7500078"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "radial styloid process"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795289"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "radial fossa"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795289"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "anatomical snuffbox"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795333"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "dorsal wrist crease"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795337"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "extensor pollicis longus tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004630"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "thoracic vertebra 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004630"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "T5 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004630"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth dorsal vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004630"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth thoracic vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011187"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "ventral tubercle of humerus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011187"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "greater tubercle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011187"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "greater tubercle of humerus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011187"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "greater tuberosity of humerus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011187"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tuberculum majus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0011187"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tuberculum majus humeri"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0012076"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tibiotalar joint"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001539"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "dorsalis pedis artery"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001539"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "arteria dorsalis pedis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001539"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "dorsal artery of foot"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of digit 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "first metatarsal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foot digit 1 metatarsal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hallux metatarsal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal I"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone digit 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of digit I"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of foot digit 1"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of hallux"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 1 metatarsal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003650"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 1 metatarsus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003651"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003651"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foot digit 2 metatarsal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003651"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003651"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal II"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003651"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003651"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of digit II"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003651"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "metatarsal bone of foot digit 2"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003651"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "second metatarsal bone"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003651"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 2 metatarsal"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003651"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 2 metatarsus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001847"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lobule of pinna"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001847"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "auricular lobule"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001847"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "ear lobe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001847"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "earlobe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001847"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lobe of ear"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001847"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lobule of auricle of ear"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001847"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lobulus auriculae"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001847"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pinna lobule"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0010163"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "eyebrow"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "4th toe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digit 4 of hind-paw"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus quartis pedis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus quartus [iv]"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foot digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fourth digit of foot"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fourth toe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind digit IV"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb digit 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digit IV"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pes digit IV"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003634"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 4"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "5th toe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digit 5 of hind-paw"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus V of pes"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus minimus pedis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus minimus; digitus quintus [v]"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus quintus [V]"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus quintus [V] pedis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus quintus of pes"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "digitus quintus pedis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth digit of foot"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fifth toe"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foot digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind digit V"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "hind limb digit 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digit V"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pedal digitus minimus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "pes digit V"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0003635"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "toe 5"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004619"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "lumbar vertebra 3"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004619"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "L3 vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0004619"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "third lumbar vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0014848"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tendon of quadriceps femoris"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0014848"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "common tendon of quadriceps femoris"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0014848"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "quadriceps femoris tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0014848"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "quadriceps tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001380"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "vastus medialis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001380"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "vastus medialis muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001379"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "vastus lateralis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001379"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "vastus lateralis muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0014437"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "iliac crest"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006807"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "ectepicondyle of humerus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006807"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "epicondylus lateralis (humerus)"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0008200"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "forehead"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0741680"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "median sacral crest"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0741717"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sacral hiatus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0741726"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "frontal notch"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0741726"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "foramen frontale"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0741726"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "frontal foramen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0741726"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "frontal notch/foramen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0741726"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "incisura frontalis/foramen frontale"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795291"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "mandibular notch"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795291"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "sigmoid notch"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795292"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "anterior hairline"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795301"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "upper abdomen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795305"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "medial malleolus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795311"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "posterior armpit fold"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795311"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "posterior axillary fold"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795312"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "posterior median line"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795313"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "first posterior sacral foramen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795314"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "second posterior sacral foramen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795315"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "third posterior sacral foramen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795316"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "fourth posterior sacral foramen"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795317"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "biceps femoris tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795324"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "iliotibial band"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795326"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "posterior hairline"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795330"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "popliteal crease"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0001690"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "ear"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795501"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "Flexor carpi ulnaris tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795501"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "Tendon of flexor carpi ulnaris muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795501"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tendon of flexor carpi ulnaris"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795500"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "Flexor carpi radialis tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795500"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tendon of flexor carpi radialis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0017618"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "extensor pollicis brevis"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0017618"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "extensor pollicis brevis muscle"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795504"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tendon of extensor digitorum longus"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795504"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "Extensor digitorum longus tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006061"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "process of vertebra"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006061"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "vertebra process"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/UBERON_0006061"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "vertebral process"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795503"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "Extensor hallucis longus tendon"
+        }
+      },
+      {
+        "Anatomical_Region_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795503"
+        },
+        "Anatomical_Region_Synonym": {
+          "type": "literal",
+          "value": "tendon of extensor hallucis longus"
+        }
+      }
+    ]
+  }
+}

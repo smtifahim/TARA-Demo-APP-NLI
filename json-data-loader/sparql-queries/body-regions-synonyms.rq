@@ -1,0 +1,36 @@
+# Query for TARA acupoint ontology's body regions with synonyms from UBERON and ILX.
+# Only considering the acupoints studied in some article.
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22/rdf-syntax-ns#>
+PREFIX partOf: <http://purl.obolibrary.org/obo/BFO_0000050>
+PREFIX ilxtr: <http://uri.interlex.org/tgbugs/uris/readable/>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX TARA: <http://www.acupunctureresearch.org/tara/ontology/>
+
+SELECT DISTINCT
+?Body_Region_IRI ?Body_Region_Synonym
+{
+    #FILTER (?Body_Region_Synonym = 'lower abdomen')
+    ?Acupoint_IRI rdfs:subClassOf+/rdfs:label "Acupoint".
+    # Only include the acupoints that are studied in some article
+    ?Acupoint_IRI TARA:isStudiedInArticle ?Studied_Article_IRI.
+    ?Acupoint_IRI (TARA:hasSurfaceLocation | TARA:hasRelatedLocation) ?Anatomical_Region_IRI.  
+    ?Anatomical_Region_IRI (rdfs:subClassOf* | ilxtr:isPartOf*) ?Body_Region_IRI.
+        ?Body_Region_IRI rdfs:label ?Body_Region_Label.
+        FILTER (?Body_Region_Label in (
+                    'head', 'face', 'neck', 'trunk', 'lower back', 'dorsal thoracic segment of trunk', 'scapular region',
+                    'chest', 'process of vertebra', 'abdomen', 'upper abdomen', 'lower abdomen',
+                    'perineum', 'limb', 'lower limb segment', 'upper limb segment', 
+                    'arm', 'elbow', 'forearm', 'hand', 'shoulder', 'knee',
+                    'leg', 'foot', 'tarsal region', 'buttock', 'hindlimb stylopod'
+               )).
+        # Gather Body Region Synonyms including labels
+        OPTIONAL 
+        {
+            ?Body_Region_IRI (rdfs:label | NIFRID:synonym | oboInOwl:hasExactSynonym) ?Body_Region_Synonym.
+        }
+
+}
+ORDER BY ?Anatomical_Region_IRI ?Anatomical_Region_Synonym
+LIMIT 10000

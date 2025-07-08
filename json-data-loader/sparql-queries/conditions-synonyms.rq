@@ -1,0 +1,30 @@
+# Query for TARA acupoint ontology disease/disoorder conditions entities with synonyms
+# Only consider the acupoints studied in some article
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX partOf: <http://purl.obolibrary.org/obo/BFO_0000050>
+PREFIX ilxtr: <http://uri.interlex.org/tgbugs/uris/readable/>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX TARA: <http://www.acupunctureresearch.org/tara/ontology/>
+
+SELECT DISTINCT
+# ?Acupoint_Label
+# ?Studied_Condition_Label
+?Studied_Condition_IRI
+?Studied_Condition_Synonym
+{
+    ?Acupoint_IRI rdfs:subClassOf+/rdfs:label "Acupoint".
+    ?Acupoint_IRI rdfs:label ?Acupoint_Label.
+    
+    # Only include the acupoints that are studied in some article
+    ?Acupoint_IRI TARA:isStudiedInArticle/TARA:hasStudiedCondition ?Studied_Condition_IRI.
+    ?Studied_Condition_IRI rdfs:label ?Studied_Condition_Label
+    
+   OPTIONAL
+   {
+    ?Studied_Condition_IRI  (rdfs:label | NIFRID:synonym | oboInOwl:hasExactSynonym) ?Studied_Condition_Synonym.
+   }
+}
+ORDER BY ?Acupoint_Label
+LIMIT 10000

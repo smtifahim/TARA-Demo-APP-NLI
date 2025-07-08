@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARA Acupuncture Research Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="claude-integration.js" defer></script>
+    <script src="gemini-integration.js" defer></script>
+    <script src="api-provider.js" defer></script>
+    <script src="proxy-support.js" defer></script>
+    <script src="summary-cleaner.js" defer></script>
+    <script src="nli.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div align="center">
+            <a href="https://tara-repository.mgb.org/" target="_blank">
+                <img src="tara-logo.png" alt="Click to know more about TARA" width="230">
+            </a>
+            <br>
+            <font face="Arial" color="#285987">Search Acupuncture Research</font>
+            <div style="margin-top: 10px; font-size: 14px; color: #555;">
+              <p>This application uses AI for natural language search with either Claude or Gemini. Select your preferred API provider from the dropdown below.</p>
+              <div class="api-settings" style="margin-top: 10px; display: flex; align-items: center; justify-content: center;">
+                <select id="api-provider-selector" class="api-provider-selector">
+                    <option value="claude">Claude</option>
+                    <option value="gemini">Gemini</option>
+                </select>
+                <button id="set-api-key" class="api-key-button">Set Claude API Key</button>
+                <button id="toggle-proxy" class="api-key-button" style="margin-left: 5px; background-color: #f0f0f0; color: #333;">Use Proxy: Off</button>
+                <span id="api-status" style="margin-left: 10px;"></span>
+              </div>
+            </div>
+        </div>
+        <hr>
+        <table class="input-table">
+            <tr>
+                <td>
+                    Acupoint
+                    <input type="text" id="acupoint" placeholder="Enter an acupoint name"
+                                    oninput="autocomplete(this, 'Acupoint')">
+                </td>
+                <!-- <td>Acupoint<input type="text" id="acupoint_category" placeholder="Type Acupoint"
+                                        oninput="autocomplete(this, 'Acupoint_Category')"></td> -->
+                <td>
+                    Meridian
+                    <input type="text" id="meridian" placeholder="Enter a meridian name"
+                                    oninput="autocomplete(this, 'Meridian')">
+                </td>
+                <!-- <td><input type="text" id="special_point" placeholder="Special Point Category" 
+                                oninput="autocomplete(this, 'Special_Point_Role')"></td> -->
+                <td>
+                    Special Point Role
+                    <input type="text" id="special_point_category" placeholder="Enter a special point role for acupoint"
+                                    oninput="autocomplete(this, 'Special_Point_Category')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Surface Region
+                    <input type="text" id="surface_region" placeholder="Enter a surface region for acupoint location"
+                                    oninput="autocomplete(this, 'Surface_Region')">
+                </td>
+                <td>
+                    Related Region
+                    <input type="text" id="related_region" placeholder="Enter a related region for acupoint (specific location within a surface region)"
+                        oninput="autocomplete(this, 'Related_Region')">
+                </td>
+                <td>
+                    Body Region
+                    <input type="text" id="body_region" placeholder="Enter a broader body region for acupoint location (e.g., limb, arm, leg)"
+                        oninput="autocomplete(this, 'Body_Region')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Studied Condition
+                    <input type="text" id="studied_condition" placeholder="Enter studied condition"
+                        oninput="autocomplete(this, 'Studied_Condition')">
+                </td>
+                <td>
+                    Condition Context
+                    <input type="text" id="condition_context" placeholder="Enter condition context"
+                        oninput="autocomplete(this, 'Condition_Context')"></td>
+                <td>
+                    Country
+                    <input type="text" id="country" placeholder="Enter a country name"
+                        oninput="autocomplete(this, 'Country')">
+                </td>
+            </tr>
+        </table>
+        
+        <!-- Natural Language Input Field -->
+        <div class="nl-label">Natural Language Query</div>
+        <div class="nl-input-container">
+            <div class="search-row">
+                <input type="text" id="nl-search-input" class="nl-search-input" 
+                       placeholder="Ask a question like 'Show studies about LI4 for headaches'" />
+            </div>
+            <div class="nl-examples">
+                <span>Examples: </span>
+                <a href="#" class="nl-example">Find acupoints used for low back pain</a> | 
+                <a href="#" class="nl-example">Research on fibromyalgia from United States</a> | 
+                <a href="#" class="nl-example">Studies about migraine disorder using gallbladder meridian</a>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="buttons">
+            <button onclick="search()" id="search-button">Search</button>
+            <button onclick="resetFields()">Reset</button>
+        </div>
+        <div id="results"></div>
+        </div>
+    </div>
+    
+    <!-- API Key setup script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Set up proxy toggle button
+        const proxyButton = document.getElementById('toggle-proxy');
+        
+        // Update button state based on current setting
+        function updateProxyButtonState() {
+          const isEnabled = isClaudeApiProxyEnabled();
+          proxyButton.textContent = `Use Proxy: ${isEnabled ? 'On' : 'Off'}`;
+          proxyButton.style.backgroundColor = isEnabled ? '#4CAF50' : '#f0f0f0';
+          proxyButton.style.color = isEnabled ? 'white' : '#333';
+        }
+        
+        // Initialize button state
+        updateProxyButtonState();
+        
+        // Add click handler for proxy toggle button
+        proxyButton.addEventListener('click', function() {
+          // Only enable proxy button when Claude is selected
+          if (!isClaudeProvider()) {
+            alert("Proxy is only available for Claude API. Gemini API doesn't require a proxy.");
+            return;
+          }
+          
+          const newState = toggleClaudeApiProxy(!isClaudeApiProxyEnabled());
+          updateProxyButtonState();
+          
+          // Show a notification about proxy status
+          const statusElement = document.getElementById('api-status');
+          statusElement.textContent = newState 
+            ? "Using proxy for API requests" 
+            : "Direct API requests enabled";
+          statusElement.style.color = newState ? "#1e88e5" : "green";
+          
+          // Refresh API key status after a short delay
+          setTimeout(updateApiKeyStatus, 3000);
+        });
+        
+        // Set event listener for API provider selector
+        document.getElementById('api-provider-selector').addEventListener('change', function(e) {
+          const provider = e.target.value;
+          setApiProvider(provider);
+          
+          // Update UI elements for the new provider
+          updateApiKeyStatus();
+          
+          // Update proxy button state - disable for Gemini
+          const proxyButton = document.getElementById('toggle-proxy');
+          if (!isClaudeProvider()) {
+            proxyButton.style.opacity = "0.5";
+            proxyButton.style.backgroundColor = "#f0f0f0";
+            proxyButton.style.color = "#999";
+            proxyButton.textContent = "Proxy: N/A";
+          } else {
+            proxyButton.style.opacity = "1";
+            updateProxyButtonState();
+          }
+        });
+        
+        // Set event listener for API key button
+        document.getElementById('set-api-key').addEventListener('click', async function() {
+          // Get the name of the current provider for the prompt
+          const providerName = isClaudeProvider() ? 'Claude' : 'Gemini';
+          const apiKey = prompt(`Please enter your ${providerName} API key:`);
+          if (apiKey) {
+            // Show validating message
+            const statusElement = document.getElementById('api-status');
+            statusElement.textContent = `Validating ${providerName} API key...`;
+            statusElement.style.color = "orange";
+            
+            // Create a small details element to show debug info
+            const detailsContainer = document.createElement('div');
+            detailsContainer.id = 'api-debug-info';
+            detailsContainer.style.marginTop = '5px';
+            detailsContainer.style.fontSize = '12px';
+            detailsContainer.style.fontFamily = 'monospace';
+            const apiSettings = document.querySelector('.api-settings');
+            
+            // Remove any existing debug info
+            const existingDebug = document.getElementById('api-debug-info');
+            if (existingDebug) {
+              existingDebug.remove();
+            }
+            
+            apiSettings.appendChild(detailsContainer);
+            detailsContainer.innerHTML = 'Sending request...';
+            
+            try {
+              // First try direct API validation
+              const isProxyEnabled = isClaudeApiProxyEnabled();
+              let validation;
+              
+              // Use the appropriate validation function based on the selected provider
+              if (isClaudeProvider()) {
+                if (isProxyEnabled) {
+                  detailsContainer.innerHTML = 'Validating Claude API key with proxy server...';
+                  validation = await validateClaudeApiKeyWithProxy(apiKey);
+                } else {
+                  detailsContainer.innerHTML = 'Validating Claude API key with direct API call...';
+                  validation = await validateClaudeApiKey(apiKey);
+                }
+              } else {
+                // For Gemini, just use direct validation (no proxy support for Gemini yet)
+                detailsContainer.innerHTML = 'Validating Gemini API key...';
+                validation = await validateGeminiApiKey(apiKey);
+              }
+              
+              // If direct validation fails and it's a CORS/network issue, try with proxy (only for Claude)
+              if (isClaudeProvider() &&
+                  !validation.valid && 
+                  !isProxyEnabled && 
+                  (validation.message.includes('Failed to fetch') || validation.message.includes('CORS'))) {
+                  
+                detailsContainer.innerHTML = 'Direct API call failed. Trying with proxy server...';
+                
+                try {
+                  validation = await validateClaudeApiKeyWithProxy(apiKey);
+                  
+                  if (validation.valid) {
+                    // Auto-enable proxy if it works
+                    toggleClaudeApiProxy(true);
+                    updateProxyButtonState();
+                  }
+                } catch (proxyError) {
+                  console.error("Proxy validation failed:", proxyError);
+                  // Keep the original validation result
+                }
+              }
+              
+              if (validation.valid) {
+                // Only save the key if validation succeeds
+                setCurrentApiKey(apiKey);
+                
+                const providerName = isClaudeProvider() ? 'Claude' : 'Gemini';
+                statusElement.textContent = `✓ ${providerName} API key valid`;
+                statusElement.style.color = "green";
+                
+                // Show different message depending on provider and proxy status
+                if (isClaudeProvider()) {
+                  detailsContainer.innerHTML = `Claude API key validated ${isProxyEnabled || validation.message.includes('proxy') ? 'via proxy' : 'successfully'}`;
+                } else {
+                  detailsContainer.innerHTML = `Gemini API key validated successfully`;
+                }
+                
+                // Hide debug info after a short delay
+                setTimeout(() => {
+                  detailsContainer.remove();
+                }, 3000);
+              } else {
+                const providerName = isClaudeProvider() ? 'Claude' : 'Gemini';
+                statusElement.textContent = `✗ ${providerName} API key invalid`;
+                statusElement.style.color = "red";
+                console.error(`${providerName} API key validation failed:`, validation.message);
+                
+                // Show detailed error message
+                detailsContainer.innerHTML = `Error: ${validation.message}`;
+                
+                // Add detailed error information if available
+                if (validation.details) {
+                  detailsContainer.innerHTML += `<div style="margin-top:5px; color:#D8000C; background-color:#FFBABA; padding:5px; border-radius:5px;">
+                    <strong>Details:</strong> ${validation.details}
+                  </div>`;
+                }
+                
+                // Common issues help - different for Claude and Gemini
+                if (isClaudeProvider()) {
+                  detailsContainer.innerHTML += `<div style="margin-top:5px">
+                    <strong>Common issues for Claude API:</strong>
+                    <ul>
+                      <li>Check if your API key format is correct</li>
+                      <li>Ensure your API key has sufficient permissions</li>
+                      <li>Check if you have billing set up with Anthropic</li>
+                      <li>Try a different model (current: ${CLAUDE_CONFIG.model})</li>
+                      ${validation.message.includes('Failed to fetch') || validation.message.includes('CORS') ? 
+                        `<li><strong>CORS issues:</strong> <button id="enable-proxy-btn" style="background-color:#4CAF50;color:white;border:none;border-radius:3px;padding:3px 6px;cursor:pointer">Enable Proxy</button> or use Chrome with CORS disabled</li>` : ''}
+                    </ul>
+                  </div>`;
+                } else {
+                  detailsContainer.innerHTML += `<div style="margin-top:5px">
+                    <strong>Common issues for Gemini API:</strong>
+                    <ul>
+                      <li>Check if your API key format is correct</li>
+                      <li>Ensure your API key is enabled for Gemini API</li>
+                      <li>Check if you have billing set up with Google Cloud</li>
+                      <li>Verify API key has access to model: ${GEMINI_CONFIG.model}</li>
+                    </ul>
+                  </div>`;
+                }
+                
+                // Add click handler for the enable proxy button
+                const enableProxyBtn = document.getElementById('enable-proxy-btn');
+                if (enableProxyBtn) {
+                  enableProxyBtn.addEventListener('click', function() {
+                    toggleClaudeApiProxy(true);
+                    updateProxyButtonState();
+                    document.getElementById('set-api-key').click();
+                  });
+                }
+              }
+            } catch (error) {
+              const providerName = isClaudeProvider() ? 'Claude' : 'Gemini';
+              statusElement.textContent = `✗ Error checking ${providerName} API key`;
+              statusElement.style.color = "red";
+              detailsContainer.innerHTML = `Network error: ${error.message}`;
+              console.error(`Error during ${providerName} API validation:`, error);
+              
+              // If there's a network error, suggest using the proxy
+              detailsContainer.innerHTML += `<div style="margin-top:5px">
+                <strong>Suggestion:</strong> Try using the proxy server
+                <button id="try-proxy-btn" style="background-color:#4CAF50;color:white;border:none;border-radius:3px;padding:3px 6px;cursor:pointer;margin-left:5px">Enable Proxy</button>
+              </div>`;
+              
+              // Add click handler for the try proxy button
+              const tryProxyBtn = document.getElementById('try-proxy-btn');
+              if (tryProxyBtn) {
+                tryProxyBtn.addEventListener('click', function() {
+                  toggleClaudeApiProxy(true);
+                  updateProxyButtonState();
+                  document.getElementById('set-api-key').click();
+                });
+              }
+            }
+          }
+        });
+        
+        // No verify button needed - validation happens when setting the key
+        
+        // Update API key status display
+        function updateApiKeyStatus() {
+          const statusElement = document.getElementById('api-status');
+          const providerName = isClaudeProvider() ? 'Claude' : 'Gemini';
+          
+          if (isCurrentApiKeySet()) {
+            statusElement.textContent = `✓ ${providerName} API key set`;
+            statusElement.style.color = "green";
+          } else {
+            statusElement.textContent = `✗ ${providerName} API key not set`;
+            statusElement.style.color = "red";
+          }
+        }
+        
+        // Check status on page load
+        updateApiKeyStatus();
+      });
+    </script>
+</body>
+</html>

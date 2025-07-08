@@ -1,0 +1,512 @@
+{
+  "head": {
+    "vars": [
+      "Studied_Condition_IRI",
+      "Studied_Condition_Synonym"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005277"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "migraine variant"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005277"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "migraine disorder"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005277"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "migraine with or without aura"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005277"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "migraine headache"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/HP_0012228"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "Tension-type headache"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005277"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "migraine"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/HP_0030833"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "Neck pain"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005546"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "fibromyalgia"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005546"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "fibromyalgia syndrome"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0006862"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "myofascial pain syndrome"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005416"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "osteoarthritis, knee"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/HP_0003419"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "Lumbago"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/HP_0034267"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "Pain in the pelvis"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/HP_0034267"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "Pelvic pain"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/HP_0003419"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "Low back pain"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/HP_0003419"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "Lower back pain"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0006629"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "osteoarthritis, hip"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0006629"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "hip osteoarthritis"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005052"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "irritable bowel syndrome"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005052"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "mucus colitis"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005052"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "irritable colon"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005052"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "spastic colon"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005052"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "IBS"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005052"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "IBD"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0100431"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "common migraine"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0100431"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "migraine without aura"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0008383"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "rheumatoid arthritis"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0008383"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "RA"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0008383"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "arthritis or polyarthritis, rheumatic"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0008383"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "arthritis, rheumatoid"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0008383"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "rheumatoid arthritis, progression of"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0008383"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "autoimmune arthritis"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/HP_6001144"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "Pain at the anterior aspect of the knee"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/HP_0030834"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "Shoulder pain"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0001875"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "inflammation of ectepicondyle of humerus"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0001875"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "archer's elbow"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0001875"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "ectepicondyle of humerus inflammation"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0001875"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "golfer's elbow"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0001875"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "medial epicondylitis"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0001875"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "hockey elbow"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0001875"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "lateral epicondylitis"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0001875"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "andrel epicondylitis"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0001875"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "epicondylitis"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795498"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "labor pain"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795497"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "postoperative pain"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://uri.interlex.org/base/ilx_0795499"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "dental pain"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0006894"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "patellofemoral pain syndrome"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/HP_0012531"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "Pain"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005473"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "temporomandibular joint disorder"
+        }
+      },
+      {
+        "Studied_Condition_IRI": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/MONDO_0005473"
+        },
+        "Studied_Condition_Synonym": {
+          "type": "literal",
+          "value": "TMD"
+        }
+      }
+    ]
+  }
+}
