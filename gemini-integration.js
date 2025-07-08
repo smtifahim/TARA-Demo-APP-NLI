@@ -185,7 +185,7 @@ Please provide a well-structured summary of these research findings in a clear, 
 A brief introduction in 2-3 sentences about the research findings, including the number of studies found and their general focus.
 
 ## Most Common Acupoints
-List each significant acupoint as a simple bullet point with a complete sentence or two:
+List four most significant acupoints as a simple bullet point with a complete sentence or two:
 - LI4 (Hegu) was studied in 5 articles examining headache and pain. Include special point category (e.g., "Back-Shu Point") for each significant acupoint if applicable
 
 Don't use bold text or special formatting - just write in a natural, narrative style.
@@ -198,16 +198,17 @@ Describe each main condition in a clear, readable way. Consider condition note a
 ## Research Methodologies
 Describe the types of studies in natural sentences rather than using special formatting:
 - The research consists of 7 randomized controlled trials, 2 systematic reviews, and 1 case studies.
+- Control groups and additional details on study designs were not consistently reported
+- Acupuncture modalities used such as electrical acupuncture, manual acupuncture, and moxibustion.
 
 ## Anatomical Context
-Provide information in a clear, narrative style:
-- The most frequently studied body regions include the back (12 studies), head (8 studies), and lower limbs (6 studies).
-- The Bladder meridian appeared most frequently, followed by the Gallbladder and Stomach meridians.
+Describe the anatomical context of the acupoints and body regions studied:
+- The acupoints studied are primarily located on the upper limb segment, trunk, and head.
 
 ## Correlation Patterns
 Present patterns using simple language and bullet points:
 - Specific acupoints and conditions that are frequently studied together
-- Special point roles for the specific acupoints above (if applicable)
+- Special point roles for the specific acupoints above (if available)
 - Meridians and research focus areas
 - Geographic or temporal trends in the research
 

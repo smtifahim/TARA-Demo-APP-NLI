@@ -6,8 +6,8 @@ const CLAUDE_CONFIG = {
     apiVersion: "2023-06-01",  // Current production API version
     //apiVersion: "2023-06-01",  // Current production API version
     // model: "claude-3-5-sonnet-20241022",  // Default model, can be changed
-    model: "claude-3-opus-20240229",  // Model that's confirmed working with API key
-    // model: "claude-3-haiku-20240307",
+    //   model: "claude-3-opus-20240229",  // Model that's confirmed working with API key
+       model: "claude-3-haiku-20240307",
     fallbackModel: "claude-3-haiku-20240307",  // Faster model for timeout retry
     defaultSystemPrompt: `You are an AI assistant specialized in analyzing acupuncture research queries. 
     Extract search parameters from natural language queries about acupuncture research.
@@ -203,35 +203,31 @@ Please provide a comprehensive and well-structured summary of these research fin
 A brief 2-3 sentence introduction to the research findings. Include the number of studies found and their general focus.
 
 ## Most Common Acupoints
-Only include this section if clear acupoint data is available. List the most frequently studied acupoints as bullet points. For each point, include:
+Only include this section if clear acupoint data is available. List the 4 most frequently studied acupoints as bullet points. For each point, include:
 - The acupoint name
 - Any special point category it belongs to (if known)
 - How many studies included it (if known)
 - Primary conditions researched in connection with this acupoint
-- Anatomical location information when available
 
 ## Key Conditions Studied
 Only include this section if condition data is available. List the main conditions as bullet points. For each:
-- Name of the conditions. 
-- Include condition note (if known).
-- Include condition context (if known).
-- Which acupoints were studied in relation to this condition
+- Name of the conditions
+- Must include condition notes (when available)
+- Include condition context (if known)
 - DO NOT make claims about acupoint effectiveness for treating conditions
 
 ## Research Methodologies
 List the types of studies represented (RCTs, systematic reviews, case studies, etc.) and their distribution if this information is available.
-
-## Anatomical Context
-Only include if relevant location data is available. Provide factual information about:
-- Body regions represented in the studies
-- Meridian distribution across studies
+- Control groups used
+- Acupuncture modalities studied (e.g., manual, electrical acupuncture)
 
 ## Correlation Patterns
 Only include if clear patterns exist. Identify objective patterns between:
 - Specific acupoints and conditions that are frequently studied together
 - Special point roles for the specific acupoints (if known)
-- Meridians and research focus areas
+- Anatomical context of body regions
 - Geographic or temporal trends in the research
+- DO NOT make claims about the recency or effectiveness of the research
 
 ## Conclusion
 A focused 2-3 sentence conclusion directly addressing the user's query: "${query}"
