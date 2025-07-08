@@ -13,7 +13,23 @@ exports.handler = async (event, context) => {
     };
   }
 
-  // Only allow POST requests
+  // Handle GET requests for health check
+  if (event.httpMethod === 'GET') {
+    return {
+      statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ 
+        status: 'ok', 
+        message: 'Claude proxy function is running',
+        timestamp: new Date().toISOString()
+      })
+    };
+  }
+
+  // Only allow POST requests for actual proxying
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,

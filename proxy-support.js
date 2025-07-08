@@ -75,22 +75,20 @@ async function validateClaudeApiKeyWithProxy(apiKey) {
         
         console.log("Validating Claude API key using proxy...");
         
-        // Ensure proxy server is running
+        // For Netlify deployment, we can optionally test the function endpoint
         try {
-            // Quick connection test to proxy server
-            const testResponse = await fetch(PROXY_CONFIG.endpoint.replace('/proxy/claude', '/ping'), {
-                method: 'GET',
-                mode: 'no-cors' // Try to connect even if CORS might block the response
+            // Test if the Netlify function is accessible
+            const testResponse = await fetch(PROXY_CONFIG.endpoint, {
+                method: 'GET'
             });
             
-            console.log("Proxy server connection test:", testResponse.type === 'opaque' ? "Connection attempt made" : "Connected");
+            if (testResponse.ok) {
+                const healthData = await testResponse.json();
+                console.log("Proxy function health check:", healthData.message);
+            }
         } catch (connError) {
-            console.warn("Proxy server connection test failed:", connError.message);
-            return {
-                valid: false,
-                message: "Proxy server is not running or not accessible",
-                details: `Make sure to start the proxy server with "node claude-proxy.js" if you're experiencing CORS issues. Error: ${connError.message}`
-            };
+            console.warn("Proxy function health check failed (this may be normal):", connError.message);
+            // Continue anyway - the health check failure doesn't necessarily mean the proxy won't work
         }
         
         const proxyResponse = await callClaudeApiWithProxy({
@@ -113,7 +111,7 @@ async function validateClaudeApiKeyWithProxy(apiKey) {
         
         let errorDetails = "";
         if (error.message.includes("Failed to fetch") || error.message.includes("NetworkError")) {
-            errorDetails = "The proxy server is likely not running. Run 'node claude-proxy.js' in a terminal window to start it.";
+            errorDetails = "Network error when connecting to the proxy function. This could be due to connectivity issues or if the Netlify function is not deployed properly.";
         }
         
         return {
