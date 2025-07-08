@@ -4,7 +4,7 @@
 // Proxy configuration
 const PROXY_CONFIG = {
     enabled: false, // Default to disabled
-    endpoint: "http://localhost:3000/proxy/claude"
+    endpoint: "/.netlify/functions/claude-proxy" // Use Netlify function endpoint
 };
 
 // Function to toggle proxy usage
