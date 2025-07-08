@@ -83,15 +83,20 @@ async function extractFiltersWithGemini(query) {
                     ]
                 }
             ],
-            systemInstruction: {
+        systemInstruction: {
                 parts: [
                     {
                         text: GEMINI_CONFIG.defaultSystemPrompt
                     }
                 ]
             },
+        // systemInstruction: {
+        //     parts: [{
+        //     text: "You are an expert at summarizing acupuncture research. Write clear, factual summaries using markdown headings."
+        //     }]
+        //     },
             generationConfig: {
-                maxOutputTokens: 1000
+                maxOutputTokens: 1200
             }
         };
 
@@ -172,50 +177,63 @@ async function summarizeResultsWithGemini(query, results) {
         const summarizationPrompt = `
 User query: "${query}"
 
-Here are the search results:
-${JSON.stringify(summarizedResults, null, 2)}
+Research data: ${JSON.stringify(summarizedResults, null, 2)}
 
-Please provide a well-structured summary of these research findings in a clear, readable style. You MUST:
+Please create a comprehensive summary covering:
+1. Overview of how many studies were found and their general focus. Consider condition notes as well.
+2. The most frequently studied acupoints (max 4) including frequency. 
+3. Main health conditions researched including condition notes
+4. Types of studies conducted including acupoint modality and control group 
+5. Key correlation patterns in the stidies in bullet points, such as: specific acupoints frequently studied together including special point roles, body region, geographic or temporal trends (if available)
+6. Conclusion in 2-3 sentences directly addressing the user's query.
 
-1. Present information in natural paragraphs and simple bullet points. Omit sections if insufficient data exists.
+Write in clear, academic language. Use markdown headings (##) for sections. Must avoid making claims about treatment effectiveness.
+`;
 
-2. Structure your response with these sections using "##" markdown headings:
+// Here are the search results:
+// ${JSON.stringify(summarizedResults, null, 2)}
 
-## Overview
-A brief introduction in 2-3 sentences about the research findings, including the number of studies found and their general focus.
+// Please provide a well-structured summary of these research findings in a clear, readable style. You MUST:
 
-## Most Common Acupoints
-Only list the 4 most frequently used acupoints as a simple bullet point with a complete sentence or two:
-- LI4 (Hegu) was studied in 5 articles examining headache and pain. Include special point category (e.g., "Back-Shu Point") for each significant acupoint if applicable
-Don't include more than 4 most frequently used acupoints.
-Don't use bold text or special formatting - just write in a natural, narrative style.
+// 1. Present information in natural paragraphs and simple bullet points. Omit sections if insufficient data exists.
 
-## Key Conditions Studied
-Describe each main condition in a clear, readable way. Consider condition note and context (if known):
-- Lower back pain appeared in 12 studies, which primarily examined acupoints BL23, BL25, and GB30.
-- Headache was researched in 8 articles, most commonly using the acupoints GB20, LI4, and TE5.
+// 2. Structure your response with these sections using "##" markdown headings:
 
-## Research Methodologies
-Describe the types of studies in natural sentences rather than using special formatting:
-- The research consists of 7 randomized controlled trials, 2 systematic reviews, and 1 case studies.
-- Control groups and additional details on study designs were not consistently reported
-- Acupuncture modalities used such as electrical acupuncture, manual acupuncture, and moxibustion.
+// ## Overview
+// A brief introduction in 2-3 sentences about the research findings, including the number of studies found and their general focus.
 
-## Anatomical Context
-Describe the anatomical context of the acupoints and body regions studied:
-- The acupoints studied are primarily located on the upper limb segment, trunk, and head.
+// ## Most Common Acupoints
+// Only list the 4 most frequently used acupoints as a simple bullet point with a complete sentence or two:
+// - LI4 (Hegu) was studied in 5 articles examining headache and pain. Include special point category (e.g., "Back-Shu Point") for each significant acupoint if applicable
+// Don't include more than 4 most frequently used acupoints.
+// Don't use bold text or special formatting - just write in a natural, narrative style.
 
-## Correlation Patterns
-Present patterns using simple language and bullet points:
-- Specific acupoints and conditions that are frequently studied together
-- Special point roles for the specific acupoints above (if available)
-- Meridians and research focus areas
-- Geographic or temporal trends in the research
+// ## Key Conditions Studied
+// Describe each main condition in a clear, readable way. Consider condition note and context (if known):
+// - Lower back pain appeared in 12 studies, which primarily examined acupoints BL23, BL25, and GB30.
+// - Headache was researched in 8 articles, most commonly using the acupoints GB20, LI4, and TE5.
 
-## Conclusion
-A focused 2-3 sentence conclusion directly addressing the user's query: "${query}"
+// ## Research Methodologies
+// Describe the types of studies in natural sentences rather than using special formatting:
+// - The research consists of 7 randomized controlled trials, 2 systematic reviews, and 1 case studies.
+// - Control groups and additional details on study designs were not consistently reported
+// - Acupuncture modalities used such as electrical acupuncture, manual acupuncture, and moxibustion.
 
-Present facts in a straightforward, academic manner in complete sentences. NEVER start paragraphs or non-list lines with dashes, hyphens, or any special characters. Use proper bullet points formatted as "- " (dash + space) ONLY when creating list items. IMPORTANT: Do not start any paragraph with a dash. Format all bullet points as proper list items. ALWAYS use digits (1, 2, 3...) instead of number words (one, two, three...) when referring to quantities. Focus on making the content readable and natural rather than highly structured. Avoid making claims about treatment effectiveness.`;
+// ## Anatomical Context
+// Describe the anatomical context of the acupoints and body regions studied:
+// - The acupoints studied are primarily located on the upper limb segment, trunk, and head.
+
+// ## Correlation Patterns
+// Present patterns using simple language and bullet points:
+// - Specific acupoints and conditions that are frequently studied together
+// - Special point roles for the specific acupoints above (if available)
+// - Meridians and research focus areas
+// - Geographic or temporal trends in the research
+
+// ## Conclusion
+// A focused 2-3 sentence conclusion directly addressing the user's query: "${query}"
+
+// Present facts in a straightforward, academic manner in complete sentences. NEVER start paragraphs or non-list lines with dashes, hyphens, or any special characters. Use proper bullet points formatted as "- " (dash + space) ONLY when creating list items. IMPORTANT: Do not start any paragraph with a dash. Format all bullet points as proper list items. ALWAYS use digits (1, 2, 3...) instead of number words (one, two, three...) when referring to quantities. Focus on making the content readable and natural rather than highly structured. Avoid making claims about treatment effectiveness.`;
 
         // Prepare the request data for Gemini
         const requestData = {
