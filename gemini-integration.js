@@ -187,7 +187,7 @@ A brief introduction in 2-3 sentences about the research findings, including the
 ## Most Common Acupoints
 List the 4 most significant acupoints as a simple bullet point with a complete sentence or two:
 - LI4 (Hegu) was studied in 5 articles examining headache and pain. Include special point category (e.g., "Back-Shu Point") for each significant acupoint if applicable
-
+Don't include more than 4 most frequently used acupoints unless the query specifically asks for more.
 Don't use bold text or special formatting - just write in a natural, narrative style.
 
 ## Key Conditions Studied
