@@ -438,54 +438,9 @@ function applyFiltersToForm(filters) {
     // Make a copy of the original filters
     const originalFilters = {...filters};
     
-    // Special case handling for queries asking about acupoints used for specific conditions
-    // For example: "Find acupoints used for lower back pain"
-    if (originalFilters.acupoint && originalFilters.studied_condition) {
-        if (originalFilters.studied_condition.toLowerCase().includes('back pain') || 
-            originalFilters.studied_condition.toLowerCase().includes('lower back')) {
-            console.log("Special case: Query about acupoints for back pain - focusing on condition only");
-            filters = {
-                studied_condition: "lower back pain"  // Standardize to known value in dataset
-            };
-        } else {
-            // For other condition searches, prioritize condition only if it's a "find acupoints for X" query
-            console.log("Query about acupoints for a condition - prioritizing condition only");
-            filters = {
-                studied_condition: originalFilters.studied_condition
-            };
-        }
-    }
-    
-    // Check if we got too many filters that might result in zero matches
+    // Apply all extracted filters without any prioritization
     const filterCount = Object.keys(filters).length;
     console.log(`Applying ${filterCount} filters:`, filters);
-    
-    // If we have too many filters (which might result in no matches), prioritize
-    if (filterCount > 2) {
-        // Prioritize studied_condition and acupoint, as they're most likely the primary intent
-        const priorityFilters = {};
-        
-        // First priority: studied_condition
-        if (filters.studied_condition) {
-            priorityFilters.studied_condition = filters.studied_condition;
-        }
-        
-        // Second priority: acupoint
-        if (filters.acupoint && Object.keys(priorityFilters).length < 2) {
-            priorityFilters.acupoint = filters.acupoint;
-        }
-        
-        // Third priority: meridian
-        if (filters.meridian && Object.keys(priorityFilters).length < 2) {
-            priorityFilters.meridian = filters.meridian;
-        }
-        
-        // If we have no priority filters, use all filters
-        if (Object.keys(priorityFilters).length > 0) {
-            console.log("Using priority filters for better results:", priorityFilters);
-            filters = priorityFilters;
-        }
-    }
     
     // Apply the filters to the form
     Object.keys(filters).forEach(key => {
@@ -1021,67 +976,12 @@ const exampleQuestions = {
 // Export example questions for use in other modules
 window.exampleQuestions = exampleQuestions;
 
-// Function to check for zero results and try alternative searches
+// Function to check for zero results - simplified to show message only
 function checkForZeroResults(resultsDiv, originalFilters, query, keyTerms) {
     // Check if results container shows zero results
     const resultsText = resultsDiv.textContent || '';
     if (resultsText.includes('Found 0 Articles') || resultsText.includes('No matching articles found')) {
-        console.log("No results found with current filters. Trying fallback search...");
-        
-        // Special handling for acupoint usage queries, especially "Find acupoints used for lower back pain"
-        if (query.toLowerCase().includes('acupoint') && 
-            (query.toLowerCase().includes('used for') || query.toLowerCase().includes(' for ')) &&
-            (query.toLowerCase().includes('back pain') || query.toLowerCase().includes('lower back'))) {
-            
-            resetFormFields();
-            document.getElementById('studied_condition').value = 'lower back pain';
-            console.log("Special case: Searching for 'lower back pain' condition");
-            window.originalSearch();
-            return;
-        }
-        
-        // Try a more focused search using only the most important filter
-        resetFormFields();
-        
-        // First try: Just use studied_condition if present
-        if (originalFilters.studied_condition) {
-            document.getElementById('studied_condition').value = originalFilters.studied_condition;
-            console.log("Fallback search using only condition:", originalFilters.studied_condition);
-            window.originalSearch();
-            return;
-        }
-        
-        // Second try: Use just the meridian if present
-        if (originalFilters.meridian) {
-            resetFormFields();
-            document.getElementById('meridian').value = originalFilters.meridian;
-            console.log("Fallback search using only meridian:", originalFilters.meridian);
-            window.originalSearch();
-            return;
-        }
-        
-        // Third try: Use just the acupoint if present
-        if (originalFilters.acupoint) {
-            resetFormFields();
-            document.getElementById('acupoint').value = originalFilters.acupoint;
-            console.log("Fallback search using only acupoint:", originalFilters.acupoint);
-            window.originalSearch();
-            return;
-        }
-        
-        // Fourth try: Look for specific keyword matches
-        if (keyTerms.includes('back pain') || keyTerms.includes('lower back')) {
-            resetFormFields();
-            document.getElementById('studied_condition').value = 'lower back pain';
-            console.log("Keyword-based fallback search for 'lower back pain'");
-            window.originalSearch();
-            return;
-        }
-        
-        // If all else fails, just show a message
-        resultsDiv.innerHTML = `
-            <p>No results found for your query: "${query}"</p>
-            <p>Try a different search or use fewer search terms.</p>
-        `;
+        console.log("No results found with current filters. All filters applied as specified.");
+        // No fallback searches - respect user's exact query filters
     }
 }
