@@ -1,0 +1,13 @@
+User query: "{query}"
+Research data: {data}
+Please create a useful summary covering:
+1. Overview of how many studies were found and their general focus.
+2. The most commonly used acupoints across studies (maximum 6). Must include frequency. After that, include acupoint location. Include less frequently used acupoints in a seperately in a new line.
+3. Health conditions studied and condition notes found. Include frequency when appropriate.
+4. Types of studies conducted including trial type, control groups, and acupuncture modality. 
+5. Key correlation patterns in the studies. 
+Include set of acupoints commonly studied together, meridian used,
+acupoints with special point roles, anatomical location,
+any geographic country or temporal trends.
+6. Conclusion in 3-4 sentences directly addressing the user's query.
+Write in clear, academic language. Use markdown headings for sections. Must avoid making claims about treatment effectiveness.

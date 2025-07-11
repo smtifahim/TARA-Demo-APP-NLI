@@ -6,31 +6,36 @@ const CLAUDE_CONFIG = {
     apiVersion: "2023-06-01",  // Current production API version
     //apiVersion: "2023-06-01",  // Current production API version
     // model: "claude-3-5-sonnet-20241022",  // Default model, can be changed
-    //   model: "claude-3-opus-20240229",  // Model that's confirmed working with API key
-       model: "claude-3-haiku-20240307",
+    model: "claude-3-opus-20240229",  // Model that's confirmed working with API key
+    // model: "claude-3-haiku-20240307",
     fallbackModel: "claude-3-haiku-20240307",  // Faster model for timeout retry
-    defaultSystemPrompt: `You are an AI assistant specialized in analyzing acupuncture research queries. 
-    Extract search parameters from natural language queries about acupuncture research.
-    Return a JSON with these fields if found in the query:
-    - acupoint: The name of any acupoint mentioned (e.g., "LI4", "Hegu", "ST36", "Special Point")
-    - meridian: Any meridian mentioned (e.g., "Lung", "Large Intestine", "Heart")
-    - special_point_category: Any special point category (e.g., "Back-Shu Point", "He-Sea Point")
-    - surface_region: Anatomical surface region (e.g., "forearm", "face", "knee")
-    - related_region: Related anatomical region (e.g., "fibula", "tibialis anterior", "dorsum of the hand")
-    - body_region: Body region (e.g., "upper limb segment", "trunk", "head", "face")
-    - studied_condition: Health condition being researched (e.g., "low back pain", "migraine", "headache")
-    - condition_context: Context of the condition (e.g., "Pain", "Addiction")
-    - country: Country where research was conducted (e.g., "China", "United States")
-    Only include fields for which you have extracted values from the query.
-    `
+    defaultSystemPrompt: null // Will be loaded from external file
+};
+
+// Store prompts loaded from external files
+let CLAUDE_LOADED_PROMPTS = {
+    extraction: null,
+    summarization: null
 };
 
 // Store API key securely in session storage (not visible in code)
 let CLAUDE_API_KEY = "";
 
-// Attempt to load the API key from session storage when the page loads
-document.addEventListener('DOMContentLoaded', function() {
+// Initialize prompts when page loads
+document.addEventListener('DOMContentLoaded', async function() {
     CLAUDE_API_KEY = sessionStorage.getItem("claude_api_key") || "";
+    
+    // Load prompts from external files
+    try {
+        CLAUDE_LOADED_PROMPTS.extraction = await window.PromptLoader.buildExtractionPrompt('claude');
+        CLAUDE_CONFIG.defaultSystemPrompt = CLAUDE_LOADED_PROMPTS.extraction;
+        console.log('Claude prompts loaded successfully');
+    } catch (error) {
+        console.error('Critical error: Failed to load Claude prompts:', error);
+        alert('Error: Could not load prompt files. Please ensure all prompt files are available.');
+        // Set a minimal prompt to prevent crashes, but user should fix the issue
+        CLAUDE_CONFIG.defaultSystemPrompt = 'Error: Prompt files not found. Please check prompt files.';
+    }
 });
 
 // Function to set API key
@@ -186,62 +191,17 @@ async function summarizeResultsWithClaude(query, results) {
         const useProxy = isClaudeApiProxyEnabled && isClaudeApiProxyEnabled();
         console.log(`Summarizing results ${useProxy ? 'using proxy' : 'with direct API call'}`);
         
-        // Create prompt for Claude to summarize the results
-        const summarizationPrompt = `
-User query: "${query}"
-
-Here are the search results:
-${JSON.stringify(summarizedResults, null, 2)}
-
-Please provide a comprehensive and well-structured summary of these research findings. You MUST:
-
-1. First, assess if there's sufficient data for a complete summary. If not enough information is available for certain sections, simply omit those sections rather than including them with minimal content.
-
-2. Structure your response with the following sections using "##" markdown for headings, but ONLY include sections where sufficient data exists:
-
-## Overview
-A brief 2-3 sentence introduction to the research findings. Include the number of studies found and their general focus.
-
-## Most Common Acupoints
-Only include this section if clear acupoint data is available. List the 4 most frequently studied acupoints as bullet points. For each point, include:
-- The acupoint name
-- Any special point category it belongs to (if known)
-- How many studies included it (if known)
-- Primary conditions researched in connection with this acupoint
-
-## Key Conditions Studied
-Only include this section if condition data is available. List the main conditions as bullet points. For each:
-- Name of the conditions
-- Must include condition notes (when available)
-- Include condition context (if known)
-- DO NOT make claims about acupoint effectiveness for treating conditions
-
-## Research Methodologies
-List the types of studies represented (RCTs, systematic reviews, case studies, etc.) and their distribution if this information is available.
-- Control groups used
-- Acupuncture modalities studied (e.g., manual, electrical acupuncture)
-
-## Correlation Patterns
-Only include if clear patterns exist. Identify objective patterns between:
-- Specific acupoints and conditions that are frequently studied together
-- Special point roles for the specific acupoints (if known)
-- Anatomical context of body regions
-- Geographic or temporal trends in the research
-- DO NOT make claims about the recency or effectiveness of the research
-
-## Conclusion
-A focused 2-3 sentence conclusion directly addressing the user's query: "${query}"
-
-Use proper markdown formatting for all sections. Each bullet point should be thorough but concise. Use factual, academic language and avoid speculation or effectiveness claims. Focus on research patterns rather than clinical outcomes. Total response should be under 1200 words.`;
-
+        // Load prompts from external files
+        const prompts = await window.PromptLoader.buildSummarizationPrompts('claude', query, summarizedResults);
+        
         // Prepare the request data
         const requestData = {
             model: CLAUDE_CONFIG.model,
-            system: "You are an expert acupuncture research scientist who specializes in creating clear, structured research summaries. Always format your analysis with proper markdown using ## for section headers and bullet points for lists. Ensure your summaries are evidence-based, academically rigorous, and present information in a structured hierarchy. Your analysis should highlight patterns in the data, identify key connections between acupoints and conditions, and synthesize findings across studies in a way that's both comprehensive and accessible. Focus on quantitative patterns where possible. IMPORTANT: Never make claims about the effectiveness or efficacy of acupuncture treatments. Instead, focus on objectively reporting what was studied and how it was studied. Omit sections entirely when insufficient data is available rather than including them with minimal content.",
+            system: prompts.systemInstruction,
             messages: [
                 {
                     role: "user",
-                    content: summarizationPrompt
+                    content: prompts.userPrompt
                 }
             ],
             max_tokens: 1200
