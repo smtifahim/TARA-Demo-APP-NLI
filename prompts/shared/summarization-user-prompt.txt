@@ -2,7 +2,7 @@ User query: "{query}"
 Research data: {data}
 Please create a useful summary covering:
 1. Overview of how many studies were found and their general focus.
-2. The most commonly used acupoints across studies (maximum 6). Must include frequency. After that, include acupoint location. Include less frequently used acupoints in a seperately in a new line.
+2. The most commonly used acupoints across studies (maximum 6). Must include frequency. After that, include acupoint location. Include less frequently used acupoints BUT seperately in a new paragraph.
 3. Health conditions studied and condition notes found. Include frequency when appropriate.
 4. Types of studies conducted including trial type, control groups, and acupuncture modality. 
 5. Key correlation patterns in the studies. 
